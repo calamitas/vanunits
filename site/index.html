@@ -1,0 +1,190 @@
+<html>
+<head>
+  <title>VanUnits</title>
+
+  <meta name="description" content="Ruby programming library for scientific applications."/>
+  <meta name="keywords" content="ruby, science, programming, si units, math, mathematics"/>
+
+  <link href="assets/style.css" rel="stylesheet" type="text/css"/>
+  <link href="assets/scrabble_s.gif" rel="icon"/>
+
+  <script type="text/javascript">
+    //pic1 = new Image();
+    //pic1.src="web/img/hruler-mm.png";
+
+    var IE = document.all?true:false;
+
+    var titleElement = null;
+
+    var tempX = 0; var tempY = 0;
+    var offX  = 0; var offY  = 0;
+    var setX  = 0; var setY  = 0;
+
+    function getMouseXY(e) {
+      if (IE) { // grab the x-y pos.s if browser is IE
+        tempX = event.clientX + document.body.scrollLeft;
+        tempY = event.clientY + document.body.scrollTop;
+      }
+      else {  // grab the x-y pos.s if browser is NS
+        tempX = e.pageX;
+        tempY = e.pageY;
+      }
+      if (tempX < 0){tempX = 0;}
+      if (tempY < 0){tempY = 0;}
+      return true;
+    };
+
+    function slideRuler(e) {
+      var left = parseInt(titleElement.style.backgroundPosition);
+      getMouseXY(e);
+      left = setX + (tempX - offX);
+      titleElement.style.backgroundPosition = left + "px 0px"
+    }
+
+    function setup() {
+      titleElement = document.getElementById('stick');
+      if (titleElement.style.backgroundPosition == '') {
+        titleElement.style.backgroundPosition = "-18px 0px";
+      }
+      if (!IE) document.captureEvents(Event.MOUSEMOVE);
+      titleElement.onmousedown = slide;
+      titleElement.onmouseup = unslide;
+    }
+
+    function slide(e) {
+      getMouseXY(e);
+      setX = parseInt(titleElement.style.backgroundPosition);
+      offX = tempX;
+      titleElement.onmousemove = slideRuler;
+    };
+
+    function unslide() {
+      titleElement.onmousemove = null;
+    };
+  </script>
+</head>
+
+<body onload="javascript: setup();">
+
+<div id="container">
+
+  <div class="adtop">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-1126154564663472";
+    //STICK DOC 234x60
+    google_ad_slot = "2256952832";
+    google_ad_width = 234;
+    google_ad_height = 60;
+    //--></script>
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+  </div>
+
+  <div class="titlebar">
+    <span class="title">VanUnits</span> <br/>
+    <span class="subtitle">SI Units System for Ruby</span>
+  </div>
+
+  <div id="stick" style="clear: both;" onmousedown="javascript: slide()" onmouseup="javascript: unslide();">
+  </div>
+
+  <div class="menu">
+    <a href="http://github.com/rubyworks/vanunits/">Development</a> &nbsp;
+    <a href="rdoc/index.html">Documentation</a> &nbsp;
+    <a href="http://github.com/rubyworks/vanunits/download/">Download</a> &nbsp;
+  </div>
+
+  <div class="text" style="z-index: 0;">
+
+    <h2>Introduction</h2>
+
+    <p>VanUnits provides a powerful SI units system which integrates directly into Ruby's
+    method dispatch system. With it, one can quickly perform typed calculations and conversions.
+    </p>
+
+    <p>Here are few simple examples:</p>
+
+    <pre>
+      reqiure 'van/units'
+      include Units
+
+      1.mile.to(feet)
+      1.acre.to(yd**2)
+      1.acre.to(sq_yd)
+      1.gallon.to(self.L)
+      1.lb.to(kg)
+      1.m.s.to(m.s)
+      1.sq_mi.to(km**2)
+      1.mile.to(km)
+      1.usd.to(twd)
+      1.bit/s + 8.bytes/s
+    </pre>
+
+    <p>Pretty scienterrific, yes?</p>
+
+    <p>Also included are real world contants in both 'cm kg s' and
+    'm kg s' formats. Some examples...</p>
+
+    <pre>
+      require 'van/units/constants'
+
+      Van::Units::Constants::MKS::SPEED_OF_LIGHT    #=> 2.99792458e8 m/s
+      Van::Units::Constants::CGS::SPEED_OF_LIGHT    #=> 2.99792458e10 cm/s
+    </pre>
+
+    <br/>
+
+    <h2>Resources</h2>
+
+    <div id="resource">
+      <a href="http://physics.nist.gov/cuu/Units/index.html">NIST Reference</a>
+      Reference material for SI Constants, Units and Uncertianty.
+    </div>
+
+    <div id="resource">
+      <a href="http://mathworld.wolfram.com/">MathWorld</a>
+      A free resource from Wolfram Research built on Mathematica
+      technology.
+    </div>
+
+    <br/>
+
+    <h2>Copying</h2>
+
+    <p>VanUnits is copyrighted by Peter Vanbroekhoven. Some adapted works
+    also have respective copyrights to their contributors.<p>
+
+    <p>VanUnits is distributed under the terms of the MIT license.</p>
+
+    <br/>
+  </div>
+
+  <div class="ad">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-1126154564663472";
+    //STICK 728x90, 12/21/07
+    google_ad_slot = "6458160191";
+    google_ad_width = 728;
+    google_ad_height = 90;
+    //--></script>
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+    <br/><br/>
+    <span style="font-size: .8em;">
+      All ad revenues support <a href="http://rubyworks.github.com/">RubyWorks</a>,
+      a collection of open source projects.
+    </span>
+  </div>
+
+</div>
+
+<div class="copyright">
+  <p>VanUnits, Copyright &copy; 2010 Thomas Sawyer &amp; Peter Vanbroekhoven</p>
+  <p>VanUnits is distributed under the terms of the MIT license.</p>
+</div>
+
+</body>
+</html>
+

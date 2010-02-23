@@ -1,0 +1,16 @@
+= Release History
+
+== 1.0.0 / 2010-02=22
+
+VanUnits is the units system orginally underpinning Stick.
+Stick has implemented a new expirmental unit system, so prior
+system is being spun-off as VanUnits.
+
+The components include are the base unit system, the currency
+syste (which needs a need online backend to function), and 
+a set of scientific constants utilizing the unit system.
+
+Changes:
+
+* Happy Brithday
+

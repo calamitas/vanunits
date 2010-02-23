@@ -1,0 +1,68 @@
+= VanUnits
+
+* home: http://rubyworks.github.com/vanunits
+
+== Description
+
+VanUnits is a sophisticated SI units system. It also includes
+currency units and a large set of scientific constants.
+
+== Usage
+
+Here are some examples of using the units system.
+
+    reqiure 'van/units'
+
+    include Van::Units
+
+    1.bit/s + 8.bytes/s
+    (1.bit/s).to(byte/s)
+    1.mile.to(feet)
+    1.acre.to(yd**2)
+    1.acre.to(sq_yd)
+    1.gallon.to(self.L)
+    1.lb.to(kg)
+    1.m.s.to(m.s)
+    1.sq_mi.to(km**2)
+    1.mile.to(km)
+
+Van::Units is namespace for all unit related classes. Mixing this in has
+the additional effect of making Units.with_unit_converter available
+without the <code>Units.</code> prefix, as well as the shortcuts for
+creating Units (see Van::Units#method_missing).
+
+
+=== Constants
+
+Also included are a large assortment of real world contants. These come in two
+varieties, typeless and typed via units.rb. (PLEASE NOTE: The typed variety is not
+yet complete).
+
+Constants are also provided in both mks (m kg s) and in cgs (cm g s) format.
+
+    require 'van/units/constants/mks'
+    require 'van/units/constants/cgs'
+
+    include Van::Units::Constants
+
+    MKS::SPEED_OF_LIGHT              #=> 2.99792458e8 m/s
+    CGS::SPEED_OF_LIGHT              #=> 2.99792458e10 cm/s
+
+Big thanks to Daniel Carrera and Brian Gough for their original work on Math::Constants
+from which these numbers derive.
+
+
+== Authors/Contributors
+
+* Peter Vanbroekhoven
+* Thomas Sawyer
+* Daniel Carrera
+* Brian Gough
+
+
+== License
+
+Copyright 2006, 2007 Peter Vanbroekhoven, Thomas Sawyer
+
+Stick is distributed under the terms of the MIT license.
+

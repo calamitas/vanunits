@@ -1,0 +1,23 @@
+We are happy to announce the release of VanUnits, a Units System
+for Ruby.
+
+  http://rubyworks.github.com/vanunits
+
+VanUnits is a spin-off of Facets' units.rb, a most excellent SI type
+system library by Peter Vanbroekhoven. This library provides a very
+robust system for working with SI types and currency values in a
+Ruby-esque way. For example:
+
+  10.m / 10.s             #=> 1 m/s
+  1.bit/s + 8.bytes/s     #=> 65.0 bit/s
+  1.mile.to(feet)         #=> 5280.0 feet
+  1.acre.to(yd**2)        #=> 4840.0 yd**2
+
+In addition to the units system itself, VanUnits includes a large
+collection of scientific constants, based on the original compilation
+by Daniel Carrera and Brian Gough (hats off to you guys!).
+
+Enjoy,
+
+  Peter
+
