@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Returns the converter with the given name. This name can be a Symbol or a String.
+full_name: Van::Units::Converter::converter
+is_singleton: true
+name: converter
+params: (name, &blk)
+visibility: private

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Returns the list of all included converters. This list may contain duplicates in some cases.
+full_name: Van::Units::Converter#included_converters
+is_singleton: false
+name: included_converters
+params: (result = [])
+visibility: public

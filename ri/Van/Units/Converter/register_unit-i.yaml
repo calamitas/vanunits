@@ -1,0 +1,32 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "Registers a new Unit with the given name. The <tt>data</tt> parameter is a Hash with some extra parameters (can be Strings or Symbols):"
+- !ruby/object:RDoc::Markup::Flow::LIST 
+  contents: 
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    label: "+alias+:"
+    body: Specifies possible aliases for the Unit.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    label: "+abbrev+:"
+    body: Specifies possible abbreviations or symbols for the Unit. The differences with aliases is that prefixes work differently; see <tt>register_si_unit</tt>, <tt>register_binary_unit</tt> and <tt>register_binary_iec_unit</tt>.
+  - !ruby/struct:RDoc::Markup::Flow::LI 
+    label: "+equals+:"
+    body: If present, specifies how the Unit depends on other units. The value for this key can either be a Hash with <tt>unit</tt> mapping to a Unit and <tt>multiplier</tt> mapping to a numeric multiplier, or a String containing the multiplier, followed by a space, followed by a representation of the Unit as returned by Unit#to_s.
+  type: :NOTE
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "Examples:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  body: "  converter.register_unit(:pint, :alias =&gt; :pints, :abbrev =&gt; [:pt, :pts]))\n  converter.register_unit(:quart, 'alias' =&gt; :quarts, :abbrev =&gt; ['qt', :qts], :equals =&gt; '2.0 pt'))\n  converter.register_unit(:gallon, :alias =&gt; :gallons, :abbrev =&gt; :gal, 'equals' =&gt; {:unit =&gt; Unit.new('qt' =&gt; 1, converter), 'multiplier' =&gt; 4.0))\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Note that Symbols and Strings are generally exchangeable within this library (internally they are converted to Symbols). The number one reason for this is that String look better in YAML.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: See also <tt>register_si_unit</tt>, <tt>register_binary_unit</tt>, <tt>register_binary_iec_unit</tt>, <tt>register_length_unit</tt>, and <tt>register_currency</tt> in currency.rb.
+full_name: Van::Units::Converter#register_unit
+is_singleton: false
+name: register_unit
+params: (unit, abbrevs=[], aliases=[], &conversion)
+visibility: private

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Divides by the given Unit.
+full_name: Van::Units::Unit#/
+is_singleton: false
+name: /
+params: (other)
+visibility: public

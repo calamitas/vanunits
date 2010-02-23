@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Van::Units::Converter#register_prefixed_unit
+is_singleton: false
+name: register_prefixed_unit
+params: (unit, prefixes, abbrevs=[], aliases=[], &conversion)
+visibility: private

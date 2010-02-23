@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Van::Units::SILoader#si_unit
+is_singleton: false
+name: si_unit
+params: (converter, name, *args)
+visibility: public

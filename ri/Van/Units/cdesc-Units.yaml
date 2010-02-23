@@ -1,0 +1,20 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: The namespace for all unit related classes. Mixing this in has the additional effect of making Units.with_unit_converter available without the <tt>Units.</tt> prefix, as well as the shortcuts for creating Units (see Units#method_missing).
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  width: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: The namespace for all unit related classes. Mixing this in has the additional effect of making Units.with_unit_converter available without the <tt>Units.</tt> prefix, as well as the shortcuts for creating Units (see Units#method_missing).
+constants: []
+
+full_name: Van::Units
+includes: []
+
+instance_methods: []
+
+name: Units

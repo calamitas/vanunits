@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: eql?
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Returns <tt>true</tt> iff the two units are equals, <em>i.e.,</em> iff they have the same exponent for all units, and they both use the same Converter.
+full_name: Van::Units::Unit#==
+is_singleton: false
+name: ==
+params: (other)
+visibility: public

@@ -1,0 +1,456 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::H 
+  level: 1
+  text: Constants in the MKS system (meters, kg, sec)
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Large assortment of real world contants in standard m kg s types.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  level: 2
+  text: Synopsis
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  body: "  include Van::Units::Constants\n\n  MKS::SPEED_OF_LIGHT   #=&gt; 2.99792458e8 m/s\n"
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  width: 
+- !ruby/struct:RDoc::Markup::Flow::H 
+  level: 1
+  text: Constants in the MKS system (meters, kg, sec)
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Large assortment of real world contants in standard m kg s types.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  level: 2
+  text: Synopsis
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  body: "  include Van::Units::Constants\n\n  MKS::SPEED_OF_LIGHT   #=&gt; 2.99792458e8 m/s\n"
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  width: 
+- !ruby/struct:RDoc::Markup::Flow::H 
+  level: 1
+  text: Constants in the MKS system (meters, kg, sec)
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Large assortment of real world contants in standard m kg s types.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  level: 2
+  text: Synopsis
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  body: "  include Van::Units::Constants\n\n  MKS::SPEED_OF_LIGHT   #=&gt; 2.99792458e8 m/s\n"
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  width: 
+- !ruby/struct:RDoc::Markup::Flow::H 
+  level: 1
+  text: Constants in the MKS system (meters, kg, sec)
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Large assortment of real world contants in standard m kg s types.
+- !ruby/struct:RDoc::Markup::Flow::H 
+  level: 2
+  text: Synopsis
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  body: "  include Van::Units::Constants\n\n  MKS::SPEED_OF_LIGHT   #=&gt; 2.99792458e8 m/s\n"
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ACRE
+  value: Math::Constants::MKS::ACRE.m**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ANGSTROM
+  value: "Math::Constants::MKS::ANGSTROM.m                                # m"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ASTRONOMICAL_UNIT
+  value: "Math::Constants::MKS::ASTRONOMICAL_UNIT.m                       # m"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ATOMIC_MASS
+  value: "Math::Constants::MKS::ATOMIC_MASS.kg                            # kg"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: BAR
+  value: Math::Constants::MKS::BAR.kg/m*s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: BARN
+  value: Math::Constants::MKS::BARN.m**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: BOHR_MAGNETON
+  value: Math::Constants::MKS::BOHR_MAGNETON.A*m**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: BOHR_RADIUS
+  value: "Math::Constants::MKS::BOHR_RADIUS.m                             # m"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: BOLTZMANN
+  value: Math::Constants::MKS::BOLTZMANN.kg*m**2/K*s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: BTU
+  value: Math::Constants::MKS::BTU.kg*m**2/s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CALORIE
+  value: Math::Constants::MKS::CALORIE.kg*m**2/s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CANADIAN_GALLON
+  value: Math::Constants::MKS::CANADIAN_GALLON.m**3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CARAT
+  value: "Math::Constants::MKS::CARAT.kg                                  # kg"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CUP
+  value: Math::Constants::MKS::CUP.m**3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CURIE
+  value: "Math::Constants::MKS::CURIE*1/1.s                               # 1 / s"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: DAY
+  value: "Math::Constants::MKS::DAY.s                                     # s"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: DYNE
+  value: Math::Constants::MKS::DYNE.kg*m/s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ELECTRON_CHARGE
+  value: "Math::Constants::MKS::ELECTRON_CHARGE.A*s                       # A s"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ELECTRON_MAGNETIC_MOMENT
+  value: Math::Constants::MKS::ELECTRON_MAGNETIC_MOMENT.A*m**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ELECTRON_VOLT
+  value: Math::Constants::MKS::ELECTRON_VOLT.kg*m**2/s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ERG
+  value: Math::Constants::MKS::ERG.kg*m**2/s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FARADAY
+  value: "Math::Constants::MKS::FARADAY.A*s/mol                           # A s / mol"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FATHOM
+  value: "Math::Constants::MKS::FATHOM.m                                  # m"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FLUID_OUNCE
+  value: Math::Constants::MKS::FLUID_OUNCE.m**3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FOOT
+  value: "Math::Constants::MKS::FOOT.m                                    # m"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FOOTCANDLE
+  value: Math::Constants::MKS::FOOTCANDLE.cd*sr/m**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FOOTLAMBERT
+  value: Math::Constants::MKS::FOOTLAMBERT.cd*sr/m**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: GAUSS
+  value: Math::Constants::MKS::GAUSS.kg/A*s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: GRAM_FORCE
+  value: Math::Constants::MKS::GRAM_FORCE.kg*m/s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: GRAVITATIONAL_CONSTANT
+  value: Math::Constants::MKS::GRAVITATIONAL_CONSTANT.m**3/kg*s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: GRAV_ACCEL
+  value: Math::Constants::MKS::GRAV_ACCEL.m/s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: HECTARE
+  value: Math::Constants::MKS::HECTARE.m**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: HORSEPOWER
+  value: Math::Constants::MKS::HORSEPOWER.kg*m**2/s**3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: HOUR
+  value: "Math::Constants::MKS::HOUR.s                                    # s"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: INCH
+  value: "Math::Constants::MKS::INCH.m                                    # m"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: INCH_OF_MERCURY
+  value: Math::Constants::MKS::INCH_OF_MERCURY.kg/m*s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: INCH_OF_WATER
+  value: Math::Constants::MKS::INCH_OF_WATER.kg/m*s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: JOULE
+  value: Math::Constants::MKS::JOULE.kg*m**2/s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: KILOMETERS_PER_HOUR
+  value: "Math::Constants::MKS::KILOMETERS_PER_HOUR.m/s                   # m / s"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: KILOPOUND_FORCE
+  value: Math::Constants::MKS::KILOPOUND_FORCE.kg*m/s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: KNOT
+  value: "Math::Constants::MKS::KNOT.m/s                                  # m / s"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: LAMBERT
+  value: Math::Constants::MKS::LAMBERT.cd*sr/m**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: LIGHT_YEAR
+  value: "Math::Constants::MKS::LIGHT_YEAR.m                              # m"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: LITER
+  value: Math::Constants::MKS::LITER.m**3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: LUMEN
+  value: "Math::Constants::MKS::LUMEN.cd*sr                               # cd sr"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: LUX
+  value: Math::Constants::MKS::LUX.cd*sr/m**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MASS_ELECTRON
+  value: "Math::Constants::MKS::MASS_ELECTRON.kg                          # kg"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MASS_MUON
+  value: "Math::Constants::MKS::MASS_MUON.kg                              # kg"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MASS_NEUTRON
+  value: "Math::Constants::MKS::MASS_NEUTRON.kg                           # kg"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MASS_PROTON
+  value: "Math::Constants::MKS::MASS_PROTON.kg                            # kg"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: METER_OF_MERCURY
+  value: Math::Constants::MKS::METER_OF_MERCURY.kg/m*s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: METRIC_TON
+  value: "Math::Constants::MKS::METRIC_TON.kg                             # kg"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MICRON
+  value: "Math::Constants::MKS::MICRON.m                                  # m"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MIL
+  value: "Math::Constants::MKS::MIL.m                                     # m"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MILE
+  value: "Math::Constants::MKS::MILE.m                                    # m"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MILES_PER_HOUR
+  value: "Math::Constants::MKS::MILES_PER_HOUR.m/s                        # m / s"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MINUTE
+  value: "Math::Constants::MKS::MINUTE.s                                  # s"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MOLAR_GAS
+  value: Math::Constants::MKS::MOLAR_GAS.kg*m**2/K*mol*s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NAUTICAL_MILE
+  value: "Math::Constants::MKS::NAUTICAL_MILE.m                           # m"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NEWTON
+  value: Math::Constants::MKS::NEWTON.kg*m/s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NUCLEAR_MAGNETON
+  value: Math::Constants::MKS::NUCLEAR_MAGNETON.A*m**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: OUNCE_MASS
+  value: "Math::Constants::MKS::OUNCE_MASS.kg                             # kg"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PARSEC
+  value: "Math::Constants::MKS::PARSEC.m                                  # m"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PHOT
+  value: Math::Constants::MKS::PHOT.cd*sr/m**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PINT
+  value: Math::Constants::MKS::PINT.m**3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PLANCKS_CONSTANT_H
+  value: "Math::Constants::MKS::PLANCKS_CONSTANT_H.kg*m**2/s              # kg m^2 / s"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PLANCKS_CONSTANT_HBAR
+  value: "Math::Constants::MKS::PLANCKS_CONSTANT_HBAR.kg*m**2/s           # kg m^2 / s"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: POINT
+  value: "Math::Constants::MKS::POINT.m                                   # m"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: POISE
+  value: Math::Constants::MKS::POISE.kg*m**-1*s**-1
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: POUNDAL
+  value: Math::Constants::MKS::POUNDAL.kg*m/s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: POUND_FORCE
+  value: Math::Constants::MKS::POUND_FORCE.kg*m/s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: POUND_MASS
+  value: "Math::Constants::MKS::POUND_MASS.kg                             # kg"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PROTON_MAGNETIC_MOMENT
+  value: Math::Constants::MKS::PROTON_MAGNETIC_MOMENT.A*m**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PSI
+  value: Math::Constants::MKS::PSI.kg/m*s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: QUART
+  value: Math::Constants::MKS::QUART.m**3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RAD
+  value: Math::Constants::MKS::RAD.m**2/s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ROENTGEN
+  value: "Math::Constants::MKS::ROENTGEN.A*s/kg                           # A s / kg"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RYDBERG
+  value: Math::Constants::MKS::RYDBERG.kg*m**2/s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SOLAR_MASS
+  value: "Math::Constants::MKS::SOLAR_MASS.kg                             # kg"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SPEED_OF_LIGHT
+  value: "Math::Constants::MKS::SPEED_OF_LIGHT.m/s                        # m / s"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: STANDARD_GAS_VOLUME
+  value: "Math::Constants::MKS::STANDARD_GAS_VOLUME.m**3/mol              # m^3 / mol"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: STD_ATMOSPHERE
+  value: Math::Constants::MKS::STD_ATMOSPHERE.kg/m*s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: STILB
+  value: Math::Constants::MKS::STILB.cd/m**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: STOKES
+  value: "Math::Constants::MKS::STOKES.m**2/s                             # m^2 / s"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TABLESPOON
+  value: Math::Constants::MKS::TABLESPOON.m**3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TEASPOON
+  value: Math::Constants::MKS::TEASPOON.m**3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TEXPOINT
+  value: "Math::Constants::MKS::TEXPOINT.m                                # m"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: THERM
+  value: Math::Constants::MKS::THERM.kg*m**2/s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TON
+  value: "Math::Constants::MKS::TON.kg                                    # kg"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TORR
+  value: Math::Constants::MKS::TORR.kg/m*s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TROY_OUNCE
+  value: "Math::Constants::MKS::TROY_OUNCE.kg                             # kg"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: UK_GALLON
+  value: Math::Constants::MKS::UK_GALLON.m**3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: UK_TON
+  value: "Math::Constants::MKS::UK_TON.kg                                 # kg"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: UNIFIED_ATOMIC_MASS
+  value: "Math::Constants::MKS::UNIFIED_ATOMIC_MASS.kg                    # kg"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: US_GALLON
+  value: Math::Constants::MKS::US_GALLON.m**3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: VACUUM_PERMEABILITY
+  value: Math::Constants::MKS::VACUUM_PERMEABILITY.kg*m/A**2*s**2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: VACUUM_PERMITTIVITY
+  value: Math::Constants::MKS::VACUUM_PERMITTIVITY.A**2*s**4/kg*m**3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: WEEK
+  value: "Math::Constants::MKS::WEEK.s                                    # s"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: YARD
+  value: "Math::Constants::MKS::YARD.m                                    # m"
+full_name: Van::Units::Constants::MKS
+includes: 
+- !ruby/object:RDoc::RI::IncludedModule 
+  name: Van::Units
+instance_methods: []
+
+name: MKS

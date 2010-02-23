@@ -1,0 +1,21 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    body: The prefixes used for binary units in the IEC system. See also Converter#register_binary_iec_unit.
+  name: BINARY_IEC_PREFIXES
+  value: "{       'yobi'  => {:abbrev => 'Yi', :multiplier => 1024.0 ** 8},       'zebi'  => {:abbrev => 'Zi', :multiplier => 1024.0 ** 7},       'exbi'  => {:abbrev => 'Ei', :multiplier => 1024.0 ** 6},       'pebi'  => {:abbrev => 'Pi', :multiplier => 1024.0 ** 5},       'tebi'  => {:abbrev => 'Ti', :multiplier => 1024.0 ** 4},       'gibi'  => {:abbrev => 'Gi', :multiplier => 1024.0 ** 3},       'mebi'  => {:abbrev => 'Mi', :multiplier => 1024.0 ** 2},       'kibi'  => {:abbrev => 'ki', :multiplier => 1024.0},        'yotta' => {:abbrev => 'Y',  :multiplier => 1e24},       'zetta' => {:abbrev => 'Z',  :multiplier => 1e21},       'exa'   => {:abbrev => 'E',  :multiplier => 1e18},       'peta'  => {:abbrev => 'P',  :multiplier => 1e14},       'tera'  => {:abbrev => 'T',  :multiplier => 1e12},       'giga'  => {:abbrev => 'G',  :multiplier => 1e9},       'mega'  => {:abbrev => 'M',  :multiplier => 1e6},       'kilo'  => {:abbrev => 'k',  :multiplier => 1e3},     }"
+full_name: Van::Units::IECBinaryLoader
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: binary_iec_unit
+name: IECBinaryLoader
+superclass: Loader

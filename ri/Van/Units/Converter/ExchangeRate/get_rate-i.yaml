@@ -1,0 +1,16 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: This method should be overridden in subclasses to return the exchange rate represented by this object. The unit in question is available as a String in the instance variable <tt>@curr</tt>. The rate should be calculated against an arbitrary but fixed base currency. The rate should be such that the following would be true
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  body: "  1 * curr = rate * base_curr\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: This function should return <tt>nil</tt> if the currency is not supported by this retrieval service. It should <em>not</em> raise an exception.
+full_name: Van::Units::Converter::ExchangeRate#get_rate
+is_singleton: false
+name: get_rate
+params: ()
+visibility: public

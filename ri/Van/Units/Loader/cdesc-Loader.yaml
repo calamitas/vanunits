@@ -1,0 +1,18 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: handles
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: method_added
+comment: 
+constants: []
+
+full_name: Van::Units::Loader
+includes: []
+
+instance_methods: []
+
+name: Loader
+superclass: Object

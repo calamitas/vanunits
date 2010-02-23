@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Van::Units::Converter::loaders
+is_singleton: true
+name: loaders
+params: ()
+visibility: private

@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Van::Units::Unit</title>
+
+	<link rel="stylesheet" href="../../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../../lib/van/units/base_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/van/units/base.rb">lib/van/units/base.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#M000033">::new</a></li>
+					
+					<li><a href="#M000041">#*</a></li>
+					
+					<li><a href="#M000037">#**</a></li>
+					
+					<li><a href="#M000044">#/</a></li>
+					
+					<li><a href="#M000049">#==</a></li>
+					
+					<li><a href="#M000052">#compatible_with?</a></li>
+					
+					<li><a href="#M000058">#decode_multiplicative_string</a></li>
+					
+					<li><a href="#M000057">#decode_string</a></li>
+					
+					<li><a href="#M000060">#do_op</a></li>
+					
+					<li><a href="#M000050">#eql?</a></li>
+					
+					<li><a href="#M000051">#hash</a></li>
+					
+					<li><a href="#M000055">#inspect</a></li>
+					
+					<li><a href="#M000056">#method_missing</a></li>
+					
+					<li><a href="#M000059">#normalize_units</a></li>
+					
+					<li><a href="#M000048">#simplify</a></li>
+					
+					<li><a href="#M000053">#to_s</a></li>
+					
+					<li><a href="#M000054">#to_unit</a></li>
+					
+					<li><a href="#M000045">#unitless?</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../../HISTORY.html">HISTORY</a></li>
+				
+					<li class="file"><a href="../../HOWITWORKS_rdoc.html">HOWITWORKS.rdoc</a></li>
+				
+					<li class="file"><a href="../../LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="../../README_rdoc.html">README.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../../Van.html">Van</a></li>
+				
+					<li><a href="../../Van/Units/BaseUnit.html">Van::Units::BaseUnit</a></li>
+				
+					<li><a href="../../Van/Units/BinaryLoader.html">Van::Units::BinaryLoader</a></li>
+				
+					<li><a href="../../Van/Units/Config.html">Van::Units::Config</a></li>
+				
+					<li><a href="../../Van/Units/Constants.html">Van::Units::Constants</a></li>
+				
+					<li><a href="../../Van/Units/Constants/CGS.html">Van::Units::Constants::CGS</a></li>
+				
+					<li><a href="../../Van/Units/Constants/MKS.html">Van::Units::Constants::MKS</a></li>
+				
+					<li><a href="../../Van/Units/Converter.html">Van::Units::Converter</a></li>
+				
+					<li><a href="../../Van/Units/Converter/ExchangeRate.html">Van::Units::Converter::ExchangeRate</a></li>
+				
+					<li><a href="../../Van/Units/Converter/ExchangeRate/CachedXMethods.html">Van::Units::Converter::ExchangeRate::CachedXMethods</a></li>
+				
+					<li><a href="../../Van/Units/Converter/ExchangeRate/XMethods.html">Van::Units::Converter::ExchangeRate::XMethods</a></li>
+				
+					<li><a href="../../Van/Units/CurrencyLoader.html">Van::Units::CurrencyLoader</a></li>
+				
+					<li><a href="../../Van/Units/IECBinaryLoader.html">Van::Units::IECBinaryLoader</a></li>
+				
+					<li><a href="../../Van/Units/LengthLoader.html">Van::Units::LengthLoader</a></li>
+				
+					<li><a href="../../Van/Units/Loader.html">Van::Units::Loader</a></li>
+				
+					<li><a href="../../Van/Units/Regexps.html">Van::Units::Regexps</a></li>
+				
+					<li><a href="../../Van/Units/SILoader.html">Van::Units::SILoader</a></li>
+				
+					<li><a href="../../Van/Units/StandardLoader.html">Van::Units::StandardLoader</a></li>
+				
+					<li><a href="../../Van/Units/Unit.html">Van::Units::Unit</a></li>
+				
+					<li><a href="../../Van/Units/Value.html">Van::Units::Value</a></li>
+				
+					<li><a href="../../Math/Constants.html">Math::Constants</a></li>
+				
+					<li><a href="../../Math/Constants/CGS.html">Math::Constants::CGS</a></li>
+				
+					<li><a href="../../Math/Constants/MKS.html">Math::Constants::MKS</a></li>
+				
+					<li><a href="../../Math/Constants/Natural.html">Math::Constants::Natural</a></li>
+				
+					<li><a href="../../Exception.html">Exception</a></li>
+				
+					<li><a href="../../Numeric.html">Numeric</a></li>
+				
+					<li><a href="../../String.html">String</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Van::Units::Unit</h1>
+
+		<div id="description">
+			<p>
+This class represents a <a href="Unit.html">Unit</a>. A <a
+href="Unit.html">Unit</a> uses a given <a
+href="Converter.html">Converter</a> with a number of registered units in
+which it can be expressed. A <a href="Unit.html">Unit</a> is the product of
+the powers of other units. In principle, these need not be integer powers,
+but this may cause problems with rounding. The following code for example
+returns <tt>false</tt>:
+</p>
+<pre>
+  Unit.new(:m =&gt; 0.1) * Unit.new(:m =&gt; 0.2) == Unit.new(:m =&gt; 0.3)
+</pre>
+<p>
+Units can be multiplied, divided, and raised to a given power. As an extra,
+1 can be divided by a <a href="Unit.html">Unit</a>.
+</p>
+<p>
+Examples:
+</p>
+<pre>
+  Unit.new(:mi =&gt; 1, :s =&gt; -1) ** 2 # =&gt; mi**2/s**2
+  Unit.new(:mi =&gt; 1, :s =&gt; -1) * Unit.new(:s =&gt; 1, :usd =&gt; -1) # =&gt; mi/usd
+  Unit.new(:mi =&gt; 1, :s =&gt; -1, Converter.converter(:uk)) *
+    Unit.new(:s =&gt; 1, :usd =&gt; -1, Converter.converter(:us)) # =&gt; TypeError
+  1 / Unit.new(:mi =&gt; 1, :s =&gt; -1) # =&gt; s/mi
+</pre>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="units-attribute-method" class="method-detail">
+				<a name="units"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">units</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p class="missing-docs">(Not documented)</p>
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="M000033"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(units = {}, converter = nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates a new (composite) <a href="Unit.html">Unit</a>. It is passed a hash
+of the form <tt>{:unit =&gt; exponent}</tt>, and the <a
+href="Converter.html">Converter</a> to use.
+</p>
+<p>
+Examples:
+</p>
+<pre>
+  Unit.new(:m =&gt; 1, :s =&gt; -1, Converter.converter(:uk)) # =&gt; m/s
+  Unit.new(:mi =&gt; 1, :s =&gt; -2) # =&gt; mi/s**2
+</pre>
+<p>
+See also <a href="Converter.html">Converter</a>, <a
+href="Converter.html#M000103">Converter.converter</a>
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/van/units/base.rb, line 206</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">units</span> = {}, <span class="ruby-identifier">converter</span> = <span class="ruby-keyword kw">nil</span>)
+      <span class="ruby-identifier">conv</span> = <span class="ruby-identifier">proc</span> { <span class="ruby-identifier">converter</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Converter</span>.<span class="ruby-identifier">current</span> }
+      <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">units</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-operator">::</span><span class="ruby-constant">String</span>
+        <span class="ruby-ivar">@units</span> = <span class="ruby-identifier">decode_string</span>(<span class="ruby-identifier">units</span>, <span class="ruby-identifier">conv</span>)
+      <span class="ruby-keyword kw">else</span>
+        <span class="ruby-ivar">@units</span> = {}
+        <span class="ruby-identifier">units</span>.<span class="ruby-identifier">each_pair</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">k</span>, <span class="ruby-identifier">v</span><span class="ruby-operator">|</span>
+          <span class="ruby-identifier">k</span> = <span class="ruby-identifier">conv</span>[].<span class="ruby-identifier">base_unit</span>(<span class="ruby-identifier">k</span>.<span class="ruby-identifier">to_sym</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">not</span> <span class="ruby-identifier">k</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">BaseUnit</span>
+          <span class="ruby-ivar">@units</span>[<span class="ruby-identifier">k</span>] = <span class="ruby-identifier">v</span>
+        <span class="ruby-keyword kw">end</span>
+      <span class="ruby-keyword kw">end</span>
+      <span class="ruby-identifier">normalize_units</span>
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="--method" class="method-detail ">
+				<a name="M000041"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">*</span><span
+						class="method-args">(other)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Multiplies with the given <a href="Unit.html">Unit</a>.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/van/units/base.rb, line 230</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-operator">*</span>(<span class="ruby-identifier">other</span>)
+      <span class="ruby-identifier">do_op</span>(<span class="ruby-identifier">:*</span>, <span class="ruby-identifier">:+</span>, <span class="ruby-identifier">other</span>)
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="--method" class="method-detail ">
+				<a name="M000037"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">**</span><span
+						class="method-args">(p)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Raises to the given power.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/van/units/base.rb, line 221</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-operator">**</span>(<span class="ruby-identifier">p</span>)
+      <span class="ruby-identifier">result</span> = {}
+      <span class="ruby-ivar">@units</span>.<span class="ruby-identifier">each_pair</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">u</span>, <span class="ruby-identifier">e</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">result</span>[<span class="ruby-identifier">u</span>] = <span class="ruby-identifier">e</span> <span class="ruby-operator">*</span> <span class="ruby-identifier">p</span>
+      <span class="ruby-keyword kw">end</span>
+      <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Unit</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">result</span>)
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="--method" class="method-detail ">
+				<a name="M000044"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">/</span><span
+						class="method-args">(other)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Divides by the given <a href="Unit.html">Unit</a>.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/van/units/base.rb, line 235</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-operator">/</span>(<span class="ruby-identifier">other</span>)
+      <span class="ruby-identifier">do_op</span>(<span class="ruby-identifier">:/</span>, <span class="ruby-identifier">:-</span>, <span class="ruby-identifier">other</span>)
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="--method" class="method-detail ">
+				<a name="M000049"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">==</span><span
+						class="method-args">(other)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns <tt>true</tt> iff the two units are equals, <em>i.e.,</em> iff they
+have the same exponent for all units, and they both use the same <a
+href="Converter.html">Converter</a>.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/van/units/base.rb, line 255</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-operator">==</span>(<span class="ruby-identifier">other</span>)
+      <span class="ruby-identifier">other</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Unit</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">units</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">units</span>
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+				<div class="aliases">
+					Also aliased as: <a href="Unit.html#M000050">eql?</a>
+				</div>
+				
+			</div>
+
+		
+			<div id="compatible-with--method" class="method-detail ">
+				<a name="M000052"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">compatible_with?</span><span
+						class="method-args">(other)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns <tt>true</tt> iff this <a href="Unit.html">Unit</a> is compatible
+with the given <a href="Unit.html">Unit</a>. This is less strict than
+equality because for example hours are compatible with seconds (&#8220;we
+can add them&#8221;), but hours are not seconds.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="compatible-with--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/van/units/base.rb, line 268</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">compatible_with?</span>(<span class="ruby-identifier">other</span>)
+      <span class="ruby-identifier">conv1</span>, <span class="ruby-identifier">conv2</span> = <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Converter</span>.<span class="ruby-identifier">coerce_units</span>(<span class="ruby-keyword kw">self</span>, <span class="ruby-identifier">other</span>)
+      <span class="ruby-identifier">conv1</span>.<span class="ruby-identifier">units</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">conv2</span>.<span class="ruby-identifier">units</span>
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="eql--method" class="method-detail method-alias">
+				<a name="M000050"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">eql?</span><span
+						class="method-args">(other)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Alias for #==
+</p>
+					
+
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="hash-method" class="method-detail ">
+				<a name="M000051"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">hash</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="hash-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/van/units/base.rb, line 261</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">hash</span>
+      <span class="ruby-ivar">@units</span>.<span class="ruby-identifier">to_a</span>.<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">e</span><span class="ruby-operator">|</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">hash</span> }.<span class="ruby-identifier">hash</span>
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="inspect-method" class="method-detail method-alias">
+				<a name="M000055"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">inspect</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Alias for <a href="Unit.html#M000053">to_s</a>
+</p>
+					
+
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="method-missing-method" class="method-detail ">
+				<a name="M000056"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">method_missing</span><span
+						class="method-args">(m, *args, &blk)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="method-missing-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/van/units/base.rb, line 291</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">method_missing</span>(<span class="ruby-identifier">m</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>)
+      <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+        <span class="ruby-identifier">args</span>[<span class="ruby-value">0</span>] = (<span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Converter</span>.<span class="ruby-identifier">converter</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">0</span>]) <span class="ruby-keyword kw">rescue</span> <span class="ruby-keyword kw">nil</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">not</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Converter</span>
+        <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">self</span> <span class="ruby-operator">*</span> <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Unit</span>.<span class="ruby-identifier">new</span>({<span class="ruby-identifier">m</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>}, <span class="ruby-identifier">args</span>[<span class="ruby-value">0</span>]) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">0</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">registered?</span>(<span class="ruby-identifier">m</span>)
+      <span class="ruby-keyword kw">elsif</span> (<span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Converter</span>.<span class="ruby-identifier">current</span>.<span class="ruby-identifier">registered?</span>(<span class="ruby-identifier">m</span>) <span class="ruby-keyword kw">rescue</span> <span class="ruby-keyword kw">false</span>)
+        <span class="ruby-identifier">raise</span> <span class="ruby-operator">::</span><span class="ruby-constant">ArgumentError</span>, <span class="ruby-value str">&quot;Wrong number of arguments&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>
+        <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">self</span> <span class="ruby-operator">*</span> <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Unit</span>.<span class="ruby-identifier">new</span>({<span class="ruby-identifier">m</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>}, <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Converter</span>.<span class="ruby-identifier">current</span>)
+      <span class="ruby-keyword kw">end</span>
+      <span class="ruby-operator">::</span><span class="ruby-constant">Exception</span>.<span class="ruby-identifier">with_clean_backtrace</span>(<span class="ruby-value str">&quot;method_missing&quot;</span>) {
+        <span class="ruby-keyword kw">super</span>
+      }
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="simplify-method" class="method-detail ">
+				<a name="M000048"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">simplify</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="simplify-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/van/units/base.rb, line 249</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">simplify</span>
+      <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Converter</span>.<span class="ruby-identifier">simplify_unit</span>(<span class="ruby-keyword kw">self</span>)
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="to-s-method" class="method-detail ">
+				<a name="M000053"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">to_s</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns a human readable string representation.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="to-s-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/van/units/base.rb, line 274</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_s</span>
+      <span class="ruby-identifier">numerator</span> = <span class="ruby-value str">&quot;&quot;</span>
+      <span class="ruby-identifier">denominator</span> = <span class="ruby-value str">&quot;&quot;</span>
+      <span class="ruby-ivar">@units</span>.<span class="ruby-identifier">each_pair</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">u</span>, <span class="ruby-identifier">e</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">e_abs</span> = <span class="ruby-identifier">e</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">e</span> <span class="ruby-operator">:</span> <span class="ruby-operator">-</span><span class="ruby-identifier">e</span> <span class="ruby-comment cmt"># This works with Complex too</span>
+        (<span class="ruby-identifier">e</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">numerator</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">denominator</span>) <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot; #{u.to_s}#{&quot;**#{e_abs}&quot; if e_abs != 1}&quot;</span>
+      <span class="ruby-keyword kw">end</span>
+      <span class="ruby-node">&quot;#{numerator.lstrip}#{&quot;/&quot; + denominator.lstrip if not denominator.empty?}&quot;</span>
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+				<div class="aliases">
+					Also aliased as: <a href="Unit.html#M000055">inspect</a>
+				</div>
+				
+			</div>
+
+		
+			<div id="to-unit-method" class="method-detail ">
+				<a name="M000054"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">to_unit</span><span
+						class="method-args">(converter = nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns <tt>self</tt>.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="to-unit-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/van/units/base.rb, line 285</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_unit</span>(<span class="ruby-identifier">converter</span> = <span class="ruby-keyword kw">nil</span>)
+      <span class="ruby-keyword kw">self</span>
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="unitless--method" class="method-detail ">
+				<a name="M000045"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">unitless?</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns <tt>true</tt> iff this <a href="Unit.html">Unit</a> has all
+exponents equal to 0.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="unitless--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/van/units/base.rb, line 240</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">unitless?</span>
+      <span class="ruby-ivar">@units</span>.<span class="ruby-identifier">empty?</span>
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="decode-multiplicative-string-method" class="method-detail ">
+				<a name="M000058"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">decode_multiplicative_string</span><span
+						class="method-args">(s, multiplier, converter, result)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="decode-multiplicative-string-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/van/units/base.rb, line 320</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">decode_multiplicative_string</span>(<span class="ruby-identifier">s</span>, <span class="ruby-identifier">multiplier</span>, <span class="ruby-identifier">converter</span>, <span class="ruby-identifier">result</span>)
+      <span class="ruby-identifier">s</span>.<span class="ruby-identifier">scan</span>(<span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Regexps</span><span class="ruby-operator">::</span><span class="ruby-constant">SINGLE_UNIT_REGEXP</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">conv</span>, <span class="ruby-identifier">unit</span>, <span class="ruby-identifier">exp</span><span class="ruby-operator">|</span>
+        <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">unit</span>
+          <span class="ruby-identifier">conv</span> = <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Converter</span>.<span class="ruby-identifier">converter</span>(<span class="ruby-identifier">conv</span>)
+        <span class="ruby-keyword kw">else</span>
+          <span class="ruby-identifier">conv</span>, <span class="ruby-identifier">unit</span> = <span class="ruby-identifier">converter</span>[], <span class="ruby-identifier">conv</span>
+        <span class="ruby-keyword kw">end</span>
+        <span class="ruby-identifier">exp</span> <span class="ruby-operator">||=</span> <span class="ruby-value str">'1'</span>
+        <span class="ruby-identifier">unit</span> = <span class="ruby-identifier">conv</span>.<span class="ruby-identifier">base_unit</span>(<span class="ruby-identifier">unit</span>)
+        <span class="ruby-identifier">result</span>[<span class="ruby-identifier">unit</span>] = (<span class="ruby-identifier">result</span>[<span class="ruby-identifier">unit</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>) <span class="ruby-operator">+</span> <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">exp</span>) <span class="ruby-operator">*</span> <span class="ruby-identifier">multiplier</span>
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="decode-string-method" class="method-detail ">
+				<a name="M000057"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">decode_string</span><span
+						class="method-args">(s, converter)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="decode-string-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/van/units/base.rb, line 306</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">decode_string</span>(<span class="ruby-identifier">s</span>, <span class="ruby-identifier">converter</span>)
+      <span class="ruby-keyword kw">if</span> <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Regexps</span><span class="ruby-operator">::</span><span class="ruby-constant">TOTAL_UNIT_REGEXP</span> <span class="ruby-operator">=~</span> <span class="ruby-identifier">s</span>
+        <span class="ruby-identifier">numerator</span>, <span class="ruby-identifier">denominator</span> = <span class="ruby-identifier">$1</span>, <span class="ruby-identifier">$2</span>
+        <span class="ruby-identifier">units</span> = {}
+        <span class="ruby-identifier">decode_multiplicative_string</span>(<span class="ruby-identifier">numerator</span>, <span class="ruby-value">1</span>, <span class="ruby-identifier">converter</span>, <span class="ruby-identifier">units</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">numerator</span>
+        <span class="ruby-identifier">decode_multiplicative_string</span>(<span class="ruby-identifier">denominator</span>, <span class="ruby-value">-1</span>, <span class="ruby-identifier">converter</span>, <span class="ruby-identifier">units</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">denominator</span>
+        <span class="ruby-identifier">units</span>
+      <span class="ruby-keyword kw">elsif</span> <span class="ruby-regexp re">/^\s*$/</span> <span class="ruby-operator">=~</span> <span class="ruby-identifier">s</span>
+        {}
+      <span class="ruby-keyword kw">else</span>
+        <span class="ruby-identifier">raise</span> <span class="ruby-operator">::</span><span class="ruby-constant">ArgumentError</span>, <span class="ruby-node">&quot;Illegal unit string #{s.dump}&quot;</span>
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="do-op-method" class="method-detail ">
+				<a name="M000060"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">do_op</span><span
+						class="method-args">(op, dual_op, other)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="do-op-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/van/units/base.rb, line 339</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">do_op</span>(<span class="ruby-identifier">op</span>, <span class="ruby-identifier">dual_op</span>, <span class="ruby-identifier">other</span>)
+      <span class="ruby-identifier">other</span> = <span class="ruby-identifier">other</span>.<span class="ruby-identifier">to_unit</span>
+      <span class="ruby-identifier">raise</span> <span class="ruby-constant">TypeError</span>, <span class="ruby-value str">&quot;cannot convert to Unit&quot;</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Unit</span> <span class="ruby-operator">===</span> <span class="ruby-identifier">other</span>
+      <span class="ruby-identifier">result</span> = <span class="ruby-ivar">@units</span>.<span class="ruby-identifier">dup</span>
+      <span class="ruby-identifier">other</span>.<span class="ruby-identifier">units</span>.<span class="ruby-identifier">each_pair</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">u</span>, <span class="ruby-identifier">e</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">result</span>[<span class="ruby-identifier">u</span>] = <span class="ruby-value">0</span> <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">not</span> <span class="ruby-identifier">result</span>[<span class="ruby-identifier">u</span>]
+        <span class="ruby-identifier">result</span>[<span class="ruby-identifier">u</span>] = <span class="ruby-identifier">result</span>[<span class="ruby-identifier">u</span>].<span class="ruby-identifier">send</span>(<span class="ruby-identifier">dual_op</span>, <span class="ruby-identifier">e</span>)
+      <span class="ruby-keyword kw">end</span>
+      <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Unit</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">result</span>)
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="normalize-units-method" class="method-detail ">
+				<a name="M000059"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">normalize_units</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="normalize-units-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/van/units/base.rb, line 333</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">normalize_units</span>
+      <span class="ruby-ivar">@units</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">unit</span><span class="ruby-operator">|</span>
+        <span class="ruby-ivar">@units</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">unit</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@units</span>[<span class="ruby-identifier">unit</span>] <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

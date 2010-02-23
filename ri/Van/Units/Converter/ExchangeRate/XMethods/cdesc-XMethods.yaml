@@ -1,0 +1,42 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Exchange rate retrieval service that uses a service from http://www.xmethods.com. See http://rubyurl.com/7uq.
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  width: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Exchange rate retrieval service that uses a service from http://www.xmethods.com. See http://rubyurl.com/7uq.
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  width: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Exchange rate retrieval service that uses a service from http://www.xmethods.com. See http://rubyurl.com/7uq.
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  width: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Exchange rate retrieval service that uses a service from http://www.xmethods.com. See http://rubyurl.com/7uq.
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  width: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Exchange rate retrieval service that uses a service from http://www.xmethods.com. See http://rubyurl.com/7uq.
+constants: []
+
+full_name: Van::Units::Converter::ExchangeRate::XMethods
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: base
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: country_mapping
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: data
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: driver
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: get_rate
+name: XMethods
+superclass: ExchangeRate

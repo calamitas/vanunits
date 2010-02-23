@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Returns <tt>self</tt>.
+full_name: Van::Units::Unit#to_unit
+is_singleton: false
+name: to_unit
+params: (converter = nil)
+visibility: public

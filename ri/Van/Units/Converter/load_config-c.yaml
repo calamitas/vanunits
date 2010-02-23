@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Van::Units::Converter::load_config
+is_singleton: true
+name: load_config
+params: (file, context)
+visibility: private

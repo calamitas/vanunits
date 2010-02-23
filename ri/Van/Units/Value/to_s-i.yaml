@@ -1,0 +1,13 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: 
+- !ruby/object:RDoc::RI::AliasName 
+  name: inspect
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Returns a human readable string representation.
+full_name: Van::Units::Value#to_s
+is_singleton: false
+name: to_s
+params: ()
+visibility: public

@@ -1,0 +1,86 @@
+--- !ruby/object:RDoc::RI::ClassDescription 
+attributes: 
+- !ruby/object:RDoc::RI::Attribute 
+  comment: 
+  name: units
+  rw: R
+class_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "This class represents a Unit. A Unit uses a given Converter with a number of registered units in which it can be expressed. A Unit is the product of the powers of other units. In principle, these need not be integer powers, but this may cause problems with rounding. The following code for example returns <tt>false</tt>:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  body: "  Unit.new(:m =&gt; 0.1) * Unit.new(:m =&gt; 0.2) == Unit.new(:m =&gt; 0.3)\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Units can be multiplied, divided, and raised to a given power. As an extra, 1 can be divided by a Unit.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "Examples:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  body: "  Unit.new(:mi =&gt; 1, :s =&gt; -1) ** 2 # =&gt; mi*<b>2/s</b>*2\n  Unit.new(:mi =&gt; 1, :s =&gt; -1) * Unit.new(:s =&gt; 1, :usd =&gt; -1) # =&gt; mi/usd\n  Unit.new(:mi =&gt; 1, :s =&gt; -1, Converter.converter(:uk)) *\n    Unit.new(:s =&gt; 1, :usd =&gt; -1, Converter.converter(:us)) # =&gt; TypeError\n  1 / Unit.new(:mi =&gt; 1, :s =&gt; -1) # =&gt; s/mi\n"
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  width: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "This class represents a Unit. A Unit uses a given Converter with a number of registered units in which it can be expressed. A Unit is the product of the powers of other units. In principle, these need not be integer powers, but this may cause problems with rounding. The following code for example returns <tt>false</tt>:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  body: "  Unit.new(:m =&gt; 0.1) * Unit.new(:m =&gt; 0.2) == Unit.new(:m =&gt; 0.3)\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Units can be multiplied, divided, and raised to a given power. As an extra, 1 can be divided by a Unit.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "Examples:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  body: "  Unit.new(:mi =&gt; 1, :s =&gt; -1) ** 2 # =&gt; mi*<b>2/s</b>*2\n  Unit.new(:mi =&gt; 1, :s =&gt; -1) * Unit.new(:s =&gt; 1, :usd =&gt; -1) # =&gt; mi/usd\n  Unit.new(:mi =&gt; 1, :s =&gt; -1, Converter.converter(:uk)) *\n    Unit.new(:s =&gt; 1, :usd =&gt; -1, Converter.converter(:us)) # =&gt; TypeError\n  1 / Unit.new(:mi =&gt; 1, :s =&gt; -1) # =&gt; s/mi\n"
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  width: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "This class represents a Unit. A Unit uses a given Converter with a number of registered units in which it can be expressed. A Unit is the product of the powers of other units. In principle, these need not be integer powers, but this may cause problems with rounding. The following code for example returns <tt>false</tt>:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  body: "  Unit.new(:m =&gt; 0.1) * Unit.new(:m =&gt; 0.2) == Unit.new(:m =&gt; 0.3)\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Units can be multiplied, divided, and raised to a given power. As an extra, 1 can be divided by a Unit.
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "Examples:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  body: "  Unit.new(:mi =&gt; 1, :s =&gt; -1) ** 2 # =&gt; mi*<b>2/s</b>*2\n  Unit.new(:mi =&gt; 1, :s =&gt; -1) * Unit.new(:s =&gt; 1, :usd =&gt; -1) # =&gt; mi/usd\n  Unit.new(:mi =&gt; 1, :s =&gt; -1, Converter.converter(:uk)) *\n    Unit.new(:s =&gt; 1, :usd =&gt; -1, Converter.converter(:us)) # =&gt; TypeError\n  1 / Unit.new(:mi =&gt; 1, :s =&gt; -1) # =&gt; s/mi\n"
+constants: []
+
+full_name: Van::Units::Unit
+includes: []
+
+instance_methods: 
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "*"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: "**"
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: /
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: ==
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: compatible_with?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: decode_multiplicative_string
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: decode_string
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: do_op
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: eql?
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: hash
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: inspect
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: method_missing
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: normalize_units
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: simplify
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_s
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: to_unit
+- !ruby/object:RDoc::RI::MethodSummary 
+  name: unitless?
+name: Unit
+superclass: Object

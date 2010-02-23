@@ -1,0 +1,53 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Contains some configuration related constants
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  width: 1
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "Contains some configuration related constants. TODO: Use plugin manager to find units."
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  width: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Contains some configuration related constants
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  width: 1
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "Contains some configuration related constants. TODO: Use plugin manager to find units."
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  width: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Contains some configuration related constants
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  width: 1
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "Contains some configuration related constants. TODO: Use plugin manager to find units."
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CONFIGDIR
+  value: File.join(SYSTEMDIR, 'data')
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    body: The standard service used for looking up currency exchange rates
+  name: DEFAULT_CURRENCY_SERVICE
+  value: Units::Converter::ExchangeRate::XMethods
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  - !ruby/struct:RDoc::Markup::Flow::VERB 
+    body: " The directory in which the data files are searched for\n"
+  - !ruby/struct:RDoc::Markup::Flow::P 
+    body: "DATADIR = 'data/van/units' #DATADIR = File.join(::Config::CONFIG['DATADIR'], 'van', 'units') CONFIGDIR = 'lib/van/data' #DATADIR = File.join(::Config::CONFIG['DATADIR'], 'van', 'units')"
+  name: SYSTEMDIR
+  value: File.dirname(__FILE__)
+full_name: Van::Units::Config
+includes: []
+
+instance_methods: []
+
+name: Config

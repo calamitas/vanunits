@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Forces simplification of the Unit part of this Value. Returns a new Value or a Float.
+full_name: Van::Units::Value#simplify
+is_singleton: false
+name: simplify
+params: ()
+visibility: public

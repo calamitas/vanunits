@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Converts this Value to the given Unit. This only works if the Converters used by this Value's Unit and the given Unit are the same. It obviously fails if the Units are not compatible (can't add apples and oranges).
+full_name: Van::Units::Value#to
+is_singleton: false
+name: to
+params: (to_unit, converter = nil)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Creates a new Converter. If a block is given, it is executed in the newly created Converter's context.
+full_name: Van::Units::Converter::new
+is_singleton: true
+name: new
+params: (name)
+visibility: private

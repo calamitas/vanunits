@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Returns the list of names of registered converters.
+full_name: Van::Units::Converter::registered_converters
+is_singleton: true
+name: registered_converters
+params: ()
+visibility: private

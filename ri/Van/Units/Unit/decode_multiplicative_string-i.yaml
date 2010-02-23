@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Van::Units::Unit#decode_multiplicative_string
+is_singleton: false
+name: decode_multiplicative_string
+params: (s, multiplier, converter, result)
+visibility: private

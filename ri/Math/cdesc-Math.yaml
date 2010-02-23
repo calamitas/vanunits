@@ -1,0 +1,40 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "Title:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  body: "  Unitless MKS Constants\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "Copyright:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  body: "  Copyright (C) 2003 Daniel Carrera, Brian Gough\n\n  MIT License\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "Authors:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  body: "  - Daniel Carrera\n  - Brian Gough\n  - Thomas Sawyer\n"
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  width: 1
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "Title:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  body: "  Unitless CGS Constants\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "Copyright:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  body: "  Copyright (C) 2003 Daniel Carrera, Brian Gough\n\n  MIT License\n"
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: "Authors:"
+- !ruby/struct:RDoc::Markup::Flow::VERB 
+  body: "  - Daniel Carrera\n  - Brian Gough\n  - Thomas Sawyer\n"
+constants: []
+
+full_name: Math
+includes: []
+
+instance_methods: []
+
+name: Math

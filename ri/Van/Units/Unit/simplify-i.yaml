@@ -1,0 +1,10 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: Van::Units::Unit#simplify
+is_singleton: false
+name: simplify
+params: ()
+visibility: public

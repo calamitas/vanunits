@@ -1,0 +1,415 @@
+--- !ruby/object:RDoc::RI::ModuleDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Unitless Constants in the CGS system (cm, g, s).
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  width: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Unitless Constants in the CGS system (cm, g, s).
+- !ruby/struct:RDoc::Markup::Flow::RULE 
+  width: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Unitless Constants in the CGS system (cm, g, s).
+constants: 
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ACRE
+  value: 4.04685642241e7
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ANGSTROM
+  value: 1e-8
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ASTRONOMICAL_UNIT
+  value: 1.49597870691e13
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: BAR
+  value: 1e6
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: BARN
+  value: 1e-24
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: BOHR_MAGNETON
+  value: "9.27400899e-20"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: BOHR_RADIUS
+  value: "5.291772083e-9"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: BOLTZMANN
+  value: "1.3806503e-16"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: BTU
+  value: 1.05505585262e10
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CALORIE
+  value: 4.1868e7
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CANADIAN_GALLON
+  value: 4.54609e3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CARAT
+  value: 2e-1
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CUP
+  value: 2.36588236501e2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: CURIE
+  value: 3.7e10
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: DAY
+  value: 8.64e4
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: DYNE
+  value: 1e0
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ELECTRON_CHARGE
+  value: "1.602176462e-19"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ELECTRON_MAGNETIC_MOMENT
+  value: "9.28476362e-20"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ELECTRON_VOLT
+  value: "1.602176462e-12"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ERG
+  value: 1e0
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FARADAY
+  value: 9.6485341472e4
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FATHOM
+  value: 1.8288e2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FLUID_OUNCE
+  value: 2.95735295626e1
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FOOT
+  value: 3.048e1
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FOOTCANDLE
+  value: "1.076e-3"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: FOOTLAMBERT
+  value: "1.07639104e-3"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: GAUSS
+  value: 1e-1
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: GRAM_FORCE
+  value: 9.80665e2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: GRAVITATIONAL_CONSTANT
+  value: "6.673e-8"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: GRAV_ACCEL
+  value: 9.80665e2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: HECTARE
+  value: 1e8
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: HORSEPOWER
+  value: 7.457e9
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: HOUR
+  value: 3.6e3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: INCH
+  value: 2.54e0
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: INCH_OF_MERCURY
+  value: 3.38638815789e4
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: INCH_OF_WATER
+  value: 2.490889e3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: JOULE
+  value: 1e7
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: KILOMETERS_PER_HOUR
+  value: 2.77777777778e1
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: KILOPOUND_FORCE
+  value: 4.44822161526e8
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: KNOT
+  value: 5.14444444444e1
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: LAMBERT
+  value: 1e0
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: LIGHT_YEAR
+  value: 9.46053620707e17
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: LITER
+  value: 1e3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: LUMEN
+  value: 1e0
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: LUX
+  value: 1e-4
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MASS_ELECTRON
+  value: "9.10938188e-28"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MASS_MUON
+  value: "1.88353109e-25"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MASS_NEUTRON
+  value: "1.67492716e-24"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MASS_PROTON
+  value: "1.67262158e-24"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: METER_OF_MERCURY
+  value: 1.33322368421e6
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: METRIC_TON
+  value: 1e6
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MICRON
+  value: 1e-4
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MIL
+  value: "2.54e-3"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MILE
+  value: 1.609344e5
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MILES_PER_HOUR
+  value: 4.4704e1
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MINUTE
+  value: 6e1
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: MOLAR_GAS
+  value: 8.314472e7
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NAUTICAL_MILE
+  value: 1.852e5
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NEWTON
+  value: 1e5
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: NUCLEAR_MAGNETON
+  value: "5.05078317e-23"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: OUNCE_MASS
+  value: 2.8349523125e1
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PARSEC
+  value: 3.08567758135e18
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PHOT
+  value: 1e0
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PINT
+  value: 4.73176473002e2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PLANCKS_CONSTANT_H
+  value: "6.62606876e-27"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PLANCKS_CONSTANT_HBAR
+  value: "1.05457159642e-27"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: POINT
+  value: "3.52777777778e-2"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: POISE
+  value: 1e0
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: POUNDAL
+  value: 1.38255e4
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: POUND_FORCE
+  value: 4.44822161526e5
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: POUND_MASS
+  value: 4.5359237e2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PROTON_MAGNETIC_MOMENT
+  value: "1.410606633e-22"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: PSI
+  value: 6.89475729317e4
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: QUART
+  value: 9.46352946004e2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RAD
+  value: 1e2
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: ROENTGEN
+  value: "2.58e-7"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: RYDBERG
+  value: "2.17987190389e-11"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SOLAR_MASS
+  value: 1.98892e33
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: SPEED_OF_LIGHT
+  value: 2.99792458e10
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: STANDARD_GAS_VOLUME
+  value: 2.2710981e4
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: STD_ATMOSPHERE
+  value: 1.01325e6
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: STILB
+  value: 1e0
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: STOKES
+  value: 1e0
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TABLESPOON
+  value: 1.47867647813e1
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TEASPOON
+  value: 4.92892159375e0
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TEXPOINT
+  value: "3.51459803515e-2"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: THERM
+  value: 1.05506e15
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TON
+  value: 9.0718474e5
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TORR
+  value: 1.33322368421e3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: TROY_OUNCE
+  value: 3.1103475e1
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: UK_GALLON
+  value: 4.546092e3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: UK_TON
+  value: 1.0160469088e6
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: UNIFIED_ATOMIC_MASS
+  value: "1.66053873e-24"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: US_GALLON
+  value: 3.78541178402e3
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: VACUUM_PERMEABILITY
+  value: "1.25663706144e-1"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: VACUUM_PERMITTIVITY
+  value: "8.854187817e-21"
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: WEEK
+  value: 6.048e5
+- !ruby/object:RDoc::RI::Constant 
+  comment: 
+  name: YARD
+  value: 9.144e1
+full_name: Math::Constants::CGS
+includes: []
+
+instance_methods: []
+
+name: CGS

@@ -1,0 +1,12 @@
+--- !ruby/object:RDoc::RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:RDoc::Markup::Flow::P 
+  body: Checks whether the unit with the given name is registered. The name can be a symbol or a string.
+full_name: Van::Units::Converter#registered?
+is_singleton: false
+name: registered?
+params: (unit)
+visibility: public
