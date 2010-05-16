@@ -1,0 +1,22 @@
+--- 
+title  : VanUnits
+suite  : rubyworks
+summary: Vanbroekhoven's Units System
+contact: Trans <transfire at gmail.com>
+created: 2005-11-26
+license: MIT
+
+authors:
+  - Peter Vanbroekhoven
+
+copyright:
+  Copyright (c) 2005 Peter Vanbroekhoven
+
+description:
+  VanUnits is a units system providing both SI units and web-updated
+  currency units, via a very easy to use method-based interface.
+  It also include a large set of real world contants, provided in
+  "m kg s" and "cm kg s" measures.
+
+resources:
+  hompage: http://rubyworks.github.com/vanunits
