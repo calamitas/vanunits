@@ -17,21 +17,20 @@ gemcutter:
 box:
   service: Box
   active : true
-  types  : [gem, gz]
-  include: [bin, demo, lib, meta, plug, test, "[A-Z]*"]
-  exclude: ~
-  master : false
+  types  : [gem]
 
 ridoc:
   service: RIDoc
   include: ~
   exclude: ~
+  output : ri
   active : true
 
 rdoc:
   service: RDoc
   include: ~
   exclude: [ Syckfile ]
+  output : site/docs/api
   active : true
 
 syntax:
