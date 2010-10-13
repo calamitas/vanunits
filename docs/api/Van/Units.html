@@ -114,6 +114,23 @@
 
 			<!-- Method Quickref -->
 			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-append_features">::append_features</a></li>
+					
+					<li><a href="#method-c-with_unit_converter">::with_unit_converter</a></li>
+					
+					<li><a href="#method-i-const_missing">#const_missing</a></li>
+					
+					<li><a href="#method-i-method_missing">#method_missing</a></li>
+					
+					<li><a href="#method-i-with_unit_converter">#with_unit_converter</a></li>
+					
+				</ul>
+			</div>
+			
 
 			<!-- Included Modules -->
 			
@@ -155,6 +172,8 @@
 				
 					<li><a href="../Van.html">Van</a></li>
 				
+					<li><a href="../Van/Units.html">Van::Units</a></li>
+				
 					<li><a href="../Van/Units/BaseUnit.html">Van::Units::BaseUnit</a></li>
 				
 					<li><a href="../Van/Units/BinaryLoader.html">Van::Units::BinaryLoader</a></li>
@@ -193,6 +212,8 @@
 				
 					<li><a href="../Van/Units/Value.html">Van::Units::Value</a></li>
 				
+					<li><a href="../Math.html">Math</a></li>
+				
 					<li><a href="../Math/Constants.html">Math::Constants</a></li>
 				
 					<li><a href="../Math/Constants/CGS.html">Math::Constants::CGS</a></li>
@@ -221,9 +242,11 @@
 		<div id="description">
 			<p>
 The namespace for all unit related classes. Mixing this in has the
-additional effect of making Units.with_unit_converter available without the
-<tt>Units.</tt> prefix, as well as the shortcuts for creating Units (see
-Units#method_missing).
+additional effect of making <a
+href="Units.html#method-i-with_unit_converter">Units.with_unit_converter</a>
+available without the <tt><a href="Units.html">Units</a>.</tt> prefix, as
+well as the shortcuts for creating <a href="Units.html">Units</a> (see <a
+href="Units.html#method-i-method_missing">Units#method_missing</a>).
 </p>
 
 		</div>
@@ -236,6 +259,254 @@ Units#method_missing).
 
 		<!-- Methods -->
 		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="append-features-method" class="method-detail ">
+				<a name="method-c-append_features"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">append_features</span><span
+						class="method-args">(m)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="append-features-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/van/units/base.rb, line 99</span>
+ 99:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">append_features</span>(<span class="ruby-identifier">m</span>)
+100:     <span class="ruby-identifier">m</span>.<span class="ruby-identifier">send</span>(<span class="ruby-value">:extend</span>, <span class="ruby-constant">Units</span>)
+101:     <span class="ruby-keyword kw">super</span>
+102:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="with-unit-converter-method" class="method-detail ">
+				<a name="method-c-with_unit_converter"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">with_unit_converter</span><span
+						class="method-args">(name)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Executes the block with the current <a
+href="Units/Converter.html">Converter</a> changed to the given <a
+href="Units/Converter.html">Converter</a>. This allows to temporarily
+change the <a href="Units/Converter.html">Converter</a> used by default. A
+<a href="Units/Converter.html">Converter</a> object can be given, or the
+name of a registered <a href="Units/Converter.html">Converter</a>.
+</p>
+<p>
+Example:
+</p>
+<pre>
+  with_unit_converter(:uk) {
+    puts 1.cwt.to(lb) # =&gt; 112.0 lb
+  }
+
+  with_unit_converter(:us) {
+    puts 1.cwt.to(lb) # =&gt; 100.0 lb
+  }
+</pre>
+<p>
+See also Converter.current.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="with-unit-converter-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/van/units/base.rb, line 120</span>
+120:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">with_unit_converter</span>(<span class="ruby-identifier">name</span>, &amp;<span class="ruby-identifier">blk</span>) <span class="ruby-comment cmt"># :yields:</span>
+121:     <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Converter</span>.<span class="ruby-identifier">with_converter</span>(<span class="ruby-identifier">name</span>, &amp;<span class="ruby-identifier">blk</span>)
+122:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="const-missing-method" class="method-detail ">
+				<a name="method-i-const_missing"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">const_missing</span><span
+						class="method-args">(c)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="const-missing-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/van/units/base.rb, line 89</span>
+89:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">const_missing</span>(<span class="ruby-identifier">c</span>)
+90:     <span class="ruby-keyword kw">if</span> (<span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Converter</span>.<span class="ruby-identifier">current</span>.<span class="ruby-identifier">registered?</span>(<span class="ruby-identifier">c</span>) <span class="ruby-keyword kw">rescue</span> <span class="ruby-keyword kw">false</span>)
+91:       <span class="ruby-keyword kw">return</span> <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Unit</span>.<span class="ruby-identifier">new</span>({<span class="ruby-identifier">c</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>}, <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Converter</span>.<span class="ruby-identifier">current</span>)
+92:     <span class="ruby-keyword kw">else</span>
+93:       <span class="ruby-operator">::</span><span class="ruby-constant">Exception</span>.<span class="ruby-identifier">with_clean_backtrace</span>(<span class="ruby-value str">&quot;const_missing&quot;</span>) {
+94:         <span class="ruby-keyword kw">super</span>
+95:       }
+96:     <span class="ruby-keyword kw">end</span>
+97:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="method-missing-method" class="method-detail ">
+				<a name="method-i-method_missing"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">method_missing</span><span
+						class="method-args">(m, *args, &blk)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="method-missing-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/van/units/base.rb, line 76</span>
+76:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">method_missing</span>(<span class="ruby-identifier">m</span>, *<span class="ruby-identifier">args</span>, &amp;<span class="ruby-identifier">blk</span>)
+77:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+78:       <span class="ruby-identifier">args</span>[<span class="ruby-value">0</span>] = (<span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Converter</span>.<span class="ruby-identifier">converter</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">0</span>]) <span class="ruby-keyword kw">rescue</span> <span class="ruby-keyword kw">nil</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">not</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Converter</span>
+79:       <span class="ruby-keyword kw">return</span> <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Unit</span>.<span class="ruby-identifier">new</span>({<span class="ruby-identifier">m</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>}, <span class="ruby-identifier">args</span>[<span class="ruby-value">0</span>]) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">0</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">registered?</span>(<span class="ruby-identifier">m</span>)
+80:     <span class="ruby-keyword kw">elsif</span> (<span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Converter</span>.<span class="ruby-identifier">current</span>.<span class="ruby-identifier">registered?</span>(<span class="ruby-identifier">m</span>) <span class="ruby-keyword kw">rescue</span> <span class="ruby-keyword kw">false</span>)
+81:       <span class="ruby-identifier">raise</span> <span class="ruby-operator">::</span><span class="ruby-constant">ArgumentError</span>, <span class="ruby-value str">&quot;Wrong number of arguments&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>
+82:       <span class="ruby-keyword kw">return</span> <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Unit</span>.<span class="ruby-identifier">new</span>({<span class="ruby-identifier">m</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>}, <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Converter</span>.<span class="ruby-identifier">current</span>)
+83:     <span class="ruby-keyword kw">end</span>
+84:     <span class="ruby-operator">::</span><span class="ruby-constant">Exception</span>.<span class="ruby-identifier">with_clean_backtrace</span>(<span class="ruby-value str">&quot;method_missing&quot;</span>) {
+85:       <span class="ruby-keyword kw">super</span>
+86:     }
+87:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="with-unit-converter-method" class="method-detail ">
+				<a name="method-i-with_unit_converter"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">with_unit_converter</span><span
+						class="method-args">(name)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Executes the block with the current <a
+href="Units/Converter.html">Converter</a> changed to the given <a
+href="Units/Converter.html">Converter</a>. This allows to temporarily
+change the <a href="Units/Converter.html">Converter</a> used by default. A
+<a href="Units/Converter.html">Converter</a> object can be given, or the
+name of a registered <a href="Units/Converter.html">Converter</a>.
+</p>
+<p>
+Example:
+</p>
+<pre>
+  with_unit_converter(:uk) {
+    puts 1.cwt.to(lb) # =&gt; 112.0 lb
+  }
+
+  with_unit_converter(:us) {
+    puts 1.cwt.to(lb) # =&gt; 100.0 lb
+  }
+</pre>
+<p>
+See also Converter.current.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="with-unit-converter-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/van/units/base.rb, line 120</span>
+120:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">with_unit_converter</span>(<span class="ruby-identifier">name</span>, &amp;<span class="ruby-identifier">blk</span>) <span class="ruby-comment cmt"># :yields:</span>
+121:     <span class="ruby-constant">Units</span><span class="ruby-operator">::</span><span class="ruby-constant">Converter</span>.<span class="ruby-identifier">with_converter</span>(<span class="ruby-identifier">name</span>, &amp;<span class="ruby-identifier">blk</span>)
+122:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
 
 	</div>
 

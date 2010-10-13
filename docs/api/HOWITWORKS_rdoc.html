@@ -68,6 +68,8 @@
 				
 					<li><a href="./Van.html">Van</a></li>
 				
+					<li><a href="./Van/Units.html">Van::Units</a></li>
+				
 					<li><a href="./Van/Units/BaseUnit.html">Van::Units::BaseUnit</a></li>
 				
 					<li><a href="./Van/Units/BinaryLoader.html">Van::Units::BinaryLoader</a></li>
@@ -105,6 +107,8 @@
 					<li><a href="./Van/Units/Unit.html">Van::Units::Unit</a></li>
 				
 					<li><a href="./Van/Units/Value.html">Van::Units::Value</a></li>
+				
+					<li><a href="./Math.html">Math</a></li>
 				
 					<li><a href="./Math/Constants.html">Math::Constants</a></li>
 				
@@ -176,23 +180,25 @@ there is to it really.
 <p>
 There&#8217;s always the notion of a current converter. When constructing a
 unit, the current converter is used by default unless specified otherwise.
-This current converter can be changed with Van::Units.with_unit_converter
+This current converter can be changed with <a
+href="Van/Units.html#method-i-with_unit_converter">Van::Units.with_unit_converter</a>
 which takes a block. The current converter is stored in a thread-local
 variable for the duration of the block and is taken from there. This gives
 the user means to specify what unit systems to use in a more granular way.
 Converter can include other converter. This allows a converter to extend
-another converter and override some of the names. This is actually what
-Van::Units.with_unit_converter does: internally it creates an anonymous
-converter that includes both the previous &#8220;current converter&#8221;
-and the new one which gets stacked on top and thus takes precedence.
+another converter and override some of the names. This is actually what <a
+href="Van/Units.html#method-i-with_unit_converter">Van::Units.with_unit_converter</a>
+does: internally it creates an anonymous converter that includes both the
+previous &#8220;current converter&#8221; and the new one which gets stacked
+on top and thus takes precedence.
 </p>
 <h2>Syntactic Sugar</h2>
 <p>
 Units are specified using symbols like :mile and :in, but units.rb offers a
-lot of syntactic sugar to make it easier to use. After including
-Van::Units, you can use mile and in directly, or even do 1.in and 2.miles.
-This is implemented through method_missing and const_missing (for units
-that start with a capital letter).
+lot of syntactic sugar to make it easier to use. After including <a
+href="Van/Units.html">Van::Units</a>, you can use mile and in directly, or
+even do 1.in and 2.miles. This is implemented through method_missing and
+const_missing (for units that start with a capital letter).
 </p>
 <h2>Loading Config Files</h2>
 <p>

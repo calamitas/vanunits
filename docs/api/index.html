@@ -57,10 +57,11 @@ Here are some examples of using the units system.
     1.mile.to(km)
 </pre>
 <p>
-Van::Units is namespace for all unit related classes. Mixing this in has
-the additional effect of making Units.with_unit_converter available without
-the <tt>Units.</tt> prefix, as well as the shortcuts for creating Units
-(see Van::Units#method_missing).
+<a href="Van/Units.html">Van::Units</a> is namespace for all unit related
+classes. Mixing this in has the additional effect of making
+Units.with_unit_converter available without the <tt>Units.</tt> prefix, as
+well as the shortcuts for creating Units (see <a
+href="Van/Units.html#method-i-method_missing">Van::Units#method_missing</a>).
 </p>
 <h3>Constants</h3>
 <p>
@@ -137,6 +138,8 @@ Stick is distributed under the terms of the MIT license.
 		
 		<li class="module"><a href="Van.html">Van</a></li>
 		
+		<li class="module"><a href="Van/Units.html">Van::Units</a></li>
+		
 		<li class="class"><a href="Van/Units/BaseUnit.html">Van::Units::BaseUnit</a></li>
 		
 		<li class="class"><a href="Van/Units/BinaryLoader.html">Van::Units::BinaryLoader</a></li>
@@ -175,6 +178,8 @@ Stick is distributed under the terms of the MIT license.
 		
 		<li class="class"><a href="Van/Units/Value.html">Van::Units::Value</a></li>
 		
+		<li class="module"><a href="Math.html">Math</a></li>
+		
 		<li class="module"><a href="Math/Constants.html">Math::Constants</a></li>
 		
 		<li class="module"><a href="Math/Constants/CGS.html">Math::Constants::CGS</a></li>
@@ -193,6 +198,8 @@ Stick is distributed under the terms of the MIT license.
 
 	<h2 id="methods">Methods</h2>
 	<ul>
+		
+			<li><a href="Van/Units.html#method-c-append_features">::append_features &mdash; Van::Units</a></li>
 		
 			<li><a href="Van/Units/Converter.html#method-c-convert_conversion">::convert_conversion &mdash; Van::Units::Converter</a></li>
 		
@@ -214,11 +221,11 @@ Stick is distributed under the terms of the MIT license.
 		
 			<li><a href="Van/Units/Loader.html#method-c-method_added">::method_added &mdash; Van::Units::Loader</a></li>
 		
+			<li><a href="Van/Units/Value.html#method-c-new">::new &mdash; Van::Units::Value</a></li>
+		
 			<li><a href="Van/Units/Unit.html#method-c-new">::new &mdash; Van::Units::Unit</a></li>
 		
 			<li><a href="Van/Units/BaseUnit.html#method-c-new">::new &mdash; Van::Units::BaseUnit</a></li>
-		
-			<li><a href="Van/Units/Value.html#method-c-new">::new &mdash; Van::Units::Value</a></li>
 		
 			<li><a href="Van/Units/Converter.html#method-c-new">::new &mdash; Van::Units::Converter</a></li>
 		
@@ -233,6 +240,8 @@ Stick is distributed under the terms of the MIT license.
 			<li><a href="Van/Units/Converter.html#method-c-require">::require &mdash; Van::Units::Converter</a></li>
 		
 			<li><a href="Exception.html#method-c-with_clean_backtrace">::with_clean_backtrace &mdash; Exception</a></li>
+		
+			<li><a href="Van/Units.html#method-c-with_unit_converter">::with_unit_converter &mdash; Van::Units</a></li>
 		
 			<li><a href="Van/Units/Unit.html#method-i-%2A">#* &mdash; Van::Units::Unit</a></li>
 		
@@ -257,6 +266,8 @@ Stick is distributed under the terms of the MIT license.
 			<li><a href="Exception.html#method-i-clean_backtrace">#clean_backtrace &mdash; Exception</a></li>
 		
 			<li><a href="Van/Units/Unit.html#method-i-compatible_with%3F">#compatible_with? &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="Van/Units.html#method-i-const_missing">#const_missing &mdash; Van::Units</a></li>
 		
 			<li><a href="Van/Units/BaseUnit.html#method-i-conversion">#conversion &mdash; Van::Units::BaseUnit</a></li>
 		
@@ -290,21 +301,21 @@ Stick is distributed under the terms of the MIT license.
 		
 			<li><a href="Van/Units/Converter/ExchangeRate/XMethods.html#method-i-driver">#driver &mdash; Van::Units::Converter::ExchangeRate::XMethods</a></li>
 		
+			<li><a href="Van/Units/Unit.html#method-i-eql%3F">#eql? &mdash; Van::Units::Unit</a></li>
+		
 			<li><a href="Van/Units/BaseUnit.html#method-i-eql%3F">#eql? &mdash; Van::Units::BaseUnit</a></li>
 		
-			<li><a href="Van/Units/Unit.html#method-i-eql%3F">#eql? &mdash; Van::Units::Unit</a></li>
+			<li><a href="Van/Units/Converter/ExchangeRate.html#method-i-get_rate">#get_rate &mdash; Van::Units::Converter::ExchangeRate</a></li>
 		
 			<li><a href="Van/Units/Converter/ExchangeRate/XMethods.html#method-i-get_rate">#get_rate &mdash; Van::Units::Converter::ExchangeRate::XMethods</a></li>
 		
 			<li><a href="Van/Units/Converter/ExchangeRate/CachedXMethods.html#method-i-get_rate">#get_rate &mdash; Van::Units::Converter::ExchangeRate::CachedXMethods</a></li>
 		
-			<li><a href="Van/Units/Converter/ExchangeRate.html#method-i-get_rate">#get_rate &mdash; Van::Units::Converter::ExchangeRate</a></li>
-		
-			<li><a href="Van/Units/BaseUnit.html#method-i-hash">#hash &mdash; Van::Units::BaseUnit</a></li>
+			<li><a href="Van/Units/Value.html#method-i-hash">#hash &mdash; Van::Units::Value</a></li>
 		
 			<li><a href="Van/Units/Unit.html#method-i-hash">#hash &mdash; Van::Units::Unit</a></li>
 		
-			<li><a href="Van/Units/Value.html#method-i-hash">#hash &mdash; Van::Units::Value</a></li>
+			<li><a href="Van/Units/BaseUnit.html#method-i-hash">#hash &mdash; Van::Units::BaseUnit</a></li>
 		
 			<li><a href="Van/Units/Converter.html#method-i-include">#include &mdash; Van::Units::Converter</a></li>
 		
@@ -312,9 +323,9 @@ Stick is distributed under the terms of the MIT license.
 		
 			<li><a href="Van/Units/Converter.html#method-i-includes%3F">#includes? &mdash; Van::Units::Converter</a></li>
 		
-			<li><a href="Van/Units/Value.html#method-i-inspect">#inspect &mdash; Van::Units::Value</a></li>
-		
 			<li><a href="Van/Units/BaseUnit.html#method-i-inspect">#inspect &mdash; Van::Units::BaseUnit</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-i-inspect">#inspect &mdash; Van::Units::Value</a></li>
 		
 			<li><a href="Van/Units/Unit.html#method-i-inspect">#inspect &mdash; Van::Units::Unit</a></li>
 		
@@ -326,11 +337,13 @@ Stick is distributed under the terms of the MIT license.
 		
 			<li><a href="Van/Units/Unit.html#method-i-method_missing">#method_missing &mdash; Van::Units::Unit</a></li>
 		
+			<li><a href="Van/Units.html#method-i-method_missing">#method_missing &mdash; Van::Units</a></li>
+		
 			<li><a href="Van/Units/Converter.html#method-i-method_missing">#method_missing &mdash; Van::Units::Converter</a></li>
 		
-			<li><a href="Van/Units/Value.html#method-i-method_missing">#method_missing &mdash; Van::Units::Value</a></li>
-		
 			<li><a href="Numeric.html#method-i-method_missing">#method_missing &mdash; Numeric</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-i-method_missing">#method_missing &mdash; Van::Units::Value</a></li>
 		
 			<li><a href="Van/Units/Unit.html#method-i-normalize_units">#normalize_units &mdash; Van::Units::Unit</a></li>
 		
@@ -362,25 +375,27 @@ Stick is distributed under the terms of the MIT license.
 		
 			<li><a href="Van/Units/Converter.html#method-i-to_s">#to_s &mdash; Van::Units::Converter</a></li>
 		
+			<li><a href="Van/Units/Value.html#method-i-to_s">#to_s &mdash; Van::Units::Value</a></li>
+		
 			<li><a href="Van/Units/BaseUnit.html#method-i-to_s">#to_s &mdash; Van::Units::BaseUnit</a></li>
 		
 			<li><a href="Van/Units/Unit.html#method-i-to_s">#to_s &mdash; Van::Units::Unit</a></li>
-		
-			<li><a href="Van/Units/Value.html#method-i-to_s">#to_s &mdash; Van::Units::Value</a></li>
 		
 			<li><a href="String.html#method-i-to_unit">#to_unit &mdash; String</a></li>
 		
 			<li><a href="Van/Units/Unit.html#method-i-to_unit">#to_unit &mdash; Van::Units::Unit</a></li>
 		
-			<li><a href="String.html#method-i-to_value">#to_value &mdash; String</a></li>
+			<li><a href="Numeric.html#method-i-to_value">#to_value &mdash; Numeric</a></li>
 		
 			<li><a href="Van/Units/Value.html#method-i-to_value">#to_value &mdash; Van::Units::Value</a></li>
 		
-			<li><a href="Numeric.html#method-i-to_value">#to_value &mdash; Numeric</a></li>
+			<li><a href="String.html#method-i-to_value">#to_value &mdash; String</a></li>
 		
 			<li><a href="Van/Units/StandardLoader.html#method-i-unit">#unit &mdash; Van::Units::StandardLoader</a></li>
 		
 			<li><a href="Van/Units/Unit.html#method-i-unitless%3F">#unitless? &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="Van/Units.html#method-i-with_unit_converter">#with_unit_converter &mdash; Van::Units</a></li>
 		
 	</ul>
 
