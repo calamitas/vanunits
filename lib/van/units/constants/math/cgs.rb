@@ -1,20 +1,4 @@
-# Title:
-#
-#   Unitless CGS Constants
-#
-# Copyright:
-#
-#   Copyright (C) 2003 Daniel Carrera, Brian Gough
-#
-#   MIT License
-#
-# Authors:
-#
-#   - Daniel Carrera
-#   - Brian Gough
-#   - Thomas Sawyer
-
-module Math #:nodoc:
+module Math
 module Constants
 
   # Unitless Constants in the CGS system (cm, g, s).

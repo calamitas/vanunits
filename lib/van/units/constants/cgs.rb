@@ -1,7 +1,7 @@
 require 'van/units'
 require 'van/units/constants/math/cgs'
 
-module Van::Units #:nodoc:
+module Van::Units
 module Constants
 
   # = Constants in the CGS system (cm, g, s)

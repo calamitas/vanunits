@@ -1,20 +1,4 @@
-# Title:
-#
-#   Unitless MKS Constants
-#
-# Copyright:
-#
-#   Copyright (C) 2003 Daniel Carrera, Brian Gough
-#
-#   MIT License
-#
-# Authors:
-#
-#   - Daniel Carrera
-#   - Brian Gough
-#   - Thomas Sawyer
-
-module Math #:nodoc:
+module Math
 module Constants
 
   # Unitless constants in the MKS system (meters, kg, sec)
