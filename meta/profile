@@ -19,4 +19,5 @@ description:
   "m kg s" and "cm kg s" measures.
 
 resources:
-  hompage: http://rubyworks.github.com/vanunits
+  home: http://rubyworks.github.com/vanunits
+  code: http://github.com/rubyworks/vanunits
