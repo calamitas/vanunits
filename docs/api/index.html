@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>VanUnits</title>
+
+	<link type="text/css" media="screen" href="rdoc.css" rel="stylesheet" />
+
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body class="indexpage">
+
+	
+	<h1>VanUnits</h1>
+
+	
+	<div id="main">
+		
+<ul>
+<li><p>
+home: <a
+href="http://rubyworks.github.com/vanunits">rubyworks.github.com/vanunits</a>
+</p>
+</li>
+</ul>
+<h2>Description</h2>
+<p>
+VanUnits is a sophisticated SI units system. It also includes currency
+units and a large set of scientific constants.
+</p>
+<h2>Usage</h2>
+<p>
+Here are some examples of using the units system.
+</p>
+<pre>
+    reqiure 'van/units'
+
+    include Van::Units
+
+    1.bit/s + 8.bytes/s
+    (1.bit/s).to(byte/s)
+    1.mile.to(feet)
+    1.acre.to(yd**2)
+    1.acre.to(sq_yd)
+    1.gallon.to(self.L)
+    1.lb.to(kg)
+    1.m.s.to(m.s)
+    1.sq_mi.to(km**2)
+    1.mile.to(km)
+</pre>
+<p>
+Van::Units is namespace for all unit related classes. Mixing this in has
+the additional effect of making Units.with_unit_converter available without
+the <tt>Units.</tt> prefix, as well as the shortcuts for creating Units
+(see Van::Units#method_missing).
+</p>
+<h3>Constants</h3>
+<p>
+Also included are a large assortment of real world contants. These come in
+two varieties, typeless and typed via units.rb. (PLEASE NOTE: The typed
+variety is not yet complete).
+</p>
+<p>
+Constants are also provided in both mks (m kg s) and in cgs (cm g s)
+format.
+</p>
+<pre>
+    require 'van/units/constants/mks'
+    require 'van/units/constants/cgs'
+
+    include Van::Units::Constants
+
+    MKS::SPEED_OF_LIGHT              #=&gt; 2.99792458e8 m/s
+    CGS::SPEED_OF_LIGHT              #=&gt; 2.99792458e10 cm/s
+</pre>
+<p>
+Big thanks to Daniel Carrera and Brian Gough for their original work on <a
+href="Math/Constants.html">Math::Constants</a> from which these numbers
+derive.
+</p>
+<h2>Authors/Contributors</h2>
+<ul>
+<li><p>
+Peter Vanbroekhoven
+</p>
+</li>
+<li><p>
+Thomas Sawyer
+</p>
+</li>
+<li><p>
+Daniel Carrera
+</p>
+</li>
+<li><p>
+Brian Gough
+</p>
+</li>
+</ul>
+<h2>License</h2>
+<p>
+Copyright 2006, 2007 Peter Vanbroekhoven, Thomas Sawyer
+</p>
+<p>
+Stick is distributed under the terms of the MIT license.
+</p>
+
+	</div>
+	
+
+	
+	
+	<h2>Files</h2>
+	<ul>
+		
+			<li class="file"><a href="HISTORY_rdoc.html">HISTORY.rdoc</a></li>
+		
+			<li class="file"><a href="HOWITWORKS_rdoc.html">HOWITWORKS.rdoc</a></li>
+		
+			<li class="file"><a href="LICENSE.html">LICENSE</a></li>
+		
+			<li class="file"><a href="README_rdoc.html">README.rdoc</a></li>
+		
+	</ul>
+	
+
+	<h2 id="classes">Classes/Modules</h2>
+	<ul>
+		
+		<li class="module"><a href="Van.html">Van</a></li>
+		
+		<li class="class"><a href="Van/Units/BaseUnit.html">Van::Units::BaseUnit</a></li>
+		
+		<li class="class"><a href="Van/Units/BinaryLoader.html">Van::Units::BinaryLoader</a></li>
+		
+		<li class="module"><a href="Van/Units/Config.html">Van::Units::Config</a></li>
+		
+		<li class="module"><a href="Van/Units/Constants.html">Van::Units::Constants</a></li>
+		
+		<li class="module"><a href="Van/Units/Constants/CGS.html">Van::Units::Constants::CGS</a></li>
+		
+		<li class="module"><a href="Van/Units/Constants/MKS.html">Van::Units::Constants::MKS</a></li>
+		
+		<li class="class"><a href="Van/Units/Converter.html">Van::Units::Converter</a></li>
+		
+		<li class="class"><a href="Van/Units/Converter/ExchangeRate.html">Van::Units::Converter::ExchangeRate</a></li>
+		
+		<li class="class"><a href="Van/Units/Converter/ExchangeRate/CachedXMethods.html">Van::Units::Converter::ExchangeRate::CachedXMethods</a></li>
+		
+		<li class="class"><a href="Van/Units/Converter/ExchangeRate/XMethods.html">Van::Units::Converter::ExchangeRate::XMethods</a></li>
+		
+		<li class="class"><a href="Van/Units/CurrencyLoader.html">Van::Units::CurrencyLoader</a></li>
+		
+		<li class="class"><a href="Van/Units/IECBinaryLoader.html">Van::Units::IECBinaryLoader</a></li>
+		
+		<li class="class"><a href="Van/Units/LengthLoader.html">Van::Units::LengthLoader</a></li>
+		
+		<li class="class"><a href="Van/Units/Loader.html">Van::Units::Loader</a></li>
+		
+		<li class="class"><a href="Van/Units/Regexps.html">Van::Units::Regexps</a></li>
+		
+		<li class="class"><a href="Van/Units/SILoader.html">Van::Units::SILoader</a></li>
+		
+		<li class="class"><a href="Van/Units/StandardLoader.html">Van::Units::StandardLoader</a></li>
+		
+		<li class="class"><a href="Van/Units/Unit.html">Van::Units::Unit</a></li>
+		
+		<li class="class"><a href="Van/Units/Value.html">Van::Units::Value</a></li>
+		
+		<li class="module"><a href="Math/Constants.html">Math::Constants</a></li>
+		
+		<li class="module"><a href="Math/Constants/CGS.html">Math::Constants::CGS</a></li>
+		
+		<li class="module"><a href="Math/Constants/MKS.html">Math::Constants::MKS</a></li>
+		
+		<li class="module"><a href="Math/Constants/Natural.html">Math::Constants::Natural</a></li>
+		
+		<li class="class"><a href="Exception.html">Exception</a></li>
+		
+		<li class="class"><a href="Numeric.html">Numeric</a></li>
+		
+		<li class="class"><a href="String.html">String</a></li>
+		
+	</ul>
+
+	<h2 id="methods">Methods</h2>
+	<ul>
+		
+			<li><a href="Van/Units/Converter.html#method-c-convert_conversion">::convert_conversion &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-c-converter">::converter &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-c-converters">::converters &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-c-current">::current &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-c-decode_string">::decode_string &mdash; Van::Units::Value</a></li>
+		
+			<li><a href="Van/Units/Loader.html#method-c-handles">::handles &mdash; Van::Units::Loader</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-c-load_config">::load_config &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-c-loader_hash">::loader_hash &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-c-loaders">::loaders &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Loader.html#method-c-method_added">::method_added &mdash; Van::Units::Loader</a></li>
+		
+			<li><a href="Van/Units/Unit.html#method-c-new">::new &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="Van/Units/BaseUnit.html#method-c-new">::new &mdash; Van::Units::BaseUnit</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-c-new">::new &mdash; Van::Units::Value</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-c-new">::new &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-c-new%21">::new! &mdash; Van::Units::Value</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-c-old_new">::old_new &mdash; Van::Units::Value</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-c-register_loader">::register_loader &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-c-registered_converters">::registered_converters &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-c-require">::require &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Exception.html#method-c-with_clean_backtrace">::with_clean_backtrace &mdash; Exception</a></li>
+		
+			<li><a href="Van/Units/Unit.html#method-i-%2A">#* &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="Van/Units/Unit.html#method-i-%2A%2A">#** &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="Van/Units/Unit.html#method-i-%2F">#/ &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="Van/Units/BaseUnit.html#method-i-%3D%3D">#== &mdash; Van::Units::BaseUnit</a></li>
+		
+			<li><a href="Van/Units/Unit.html#method-i-%3D%3D">#== &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="Van/Units/Converter/ExchangeRate/XMethods.html#method-i-base">#base &mdash; Van::Units::Converter::ExchangeRate::XMethods</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-i-base_unit">#base_unit &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/IECBinaryLoader.html#method-i-binary_iec_unit">#binary_iec_unit &mdash; Van::Units::IECBinaryLoader</a></li>
+		
+			<li><a href="Van/Units/BinaryLoader.html#method-i-binary_unit">#binary_unit &mdash; Van::Units::BinaryLoader</a></li>
+		
+			<li><a href="Van/Units/CurrencyLoader.html#method-i-ce_service">#ce_service &mdash; Van::Units::CurrencyLoader</a></li>
+		
+			<li><a href="Exception.html#method-i-clean_backtrace">#clean_backtrace &mdash; Exception</a></li>
+		
+			<li><a href="Van/Units/Unit.html#method-i-compatible_with%3F">#compatible_with? &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="Van/Units/BaseUnit.html#method-i-conversion">#conversion &mdash; Van::Units::BaseUnit</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-i-conversions">#conversions &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-i-conversions">#conversions &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Converter/ExchangeRate/XMethods.html#method-i-country_mapping">#country_mapping &mdash; Van::Units::Converter::ExchangeRate::XMethods</a></li>
+		
+			<li><a href="Van/Units/CurrencyLoader.html#method-i-currency_unit">#currency_unit &mdash; Van::Units::CurrencyLoader</a></li>
+		
+			<li><a href="Van/Units/Converter/ExchangeRate/CachedXMethods.html#method-i-data">#data &mdash; Van::Units::Converter::ExchangeRate::CachedXMethods</a></li>
+		
+			<li><a href="Van/Units/Converter/ExchangeRate/XMethods.html#method-i-data">#data &mdash; Van::Units::Converter::ExchangeRate::XMethods</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-i-decode_conversion">#decode_conversion &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Unit.html#method-i-decode_multiplicative_string">#decode_multiplicative_string &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="Van/Units/Unit.html#method-i-decode_string">#decode_string &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-i-div">#div &mdash; Van::Units::Value</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-i-divmod">#divmod &mdash; Van::Units::Value</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-i-do_additive_op">#do_additive_op &mdash; Van::Units::Value</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-i-do_multiplicative_op">#do_multiplicative_op &mdash; Van::Units::Value</a></li>
+		
+			<li><a href="Van/Units/Unit.html#method-i-do_op">#do_op &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="Van/Units/Converter/ExchangeRate/XMethods.html#method-i-driver">#driver &mdash; Van::Units::Converter::ExchangeRate::XMethods</a></li>
+		
+			<li><a href="Van/Units/BaseUnit.html#method-i-eql%3F">#eql? &mdash; Van::Units::BaseUnit</a></li>
+		
+			<li><a href="Van/Units/Unit.html#method-i-eql%3F">#eql? &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="Van/Units/Converter/ExchangeRate/XMethods.html#method-i-get_rate">#get_rate &mdash; Van::Units::Converter::ExchangeRate::XMethods</a></li>
+		
+			<li><a href="Van/Units/Converter/ExchangeRate/CachedXMethods.html#method-i-get_rate">#get_rate &mdash; Van::Units::Converter::ExchangeRate::CachedXMethods</a></li>
+		
+			<li><a href="Van/Units/Converter/ExchangeRate.html#method-i-get_rate">#get_rate &mdash; Van::Units::Converter::ExchangeRate</a></li>
+		
+			<li><a href="Van/Units/BaseUnit.html#method-i-hash">#hash &mdash; Van::Units::BaseUnit</a></li>
+		
+			<li><a href="Van/Units/Unit.html#method-i-hash">#hash &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-i-hash">#hash &mdash; Van::Units::Value</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-i-include">#include &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-i-included_converters">#included_converters &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-i-includes%3F">#includes? &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-i-inspect">#inspect &mdash; Van::Units::Value</a></li>
+		
+			<li><a href="Van/Units/BaseUnit.html#method-i-inspect">#inspect &mdash; Van::Units::BaseUnit</a></li>
+		
+			<li><a href="Van/Units/Unit.html#method-i-inspect">#inspect &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-i-inspect">#inspect &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/LengthLoader.html#method-i-length_unit">#length_unit &mdash; Van::Units::LengthLoader</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-i-load">#load &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Unit.html#method-i-method_missing">#method_missing &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-i-method_missing">#method_missing &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-i-method_missing">#method_missing &mdash; Van::Units::Value</a></li>
+		
+			<li><a href="Numeric.html#method-i-method_missing">#method_missing &mdash; Numeric</a></li>
+		
+			<li><a href="Van/Units/Unit.html#method-i-normalize_units">#normalize_units &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-i-register_prefixed_unit">#register_prefixed_unit &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-i-register_unit">#register_unit &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-i-register_unit_internal">#register_unit_internal &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-i-registered%3F">#registered? &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-i-registered_here%3F">#registered_here? &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-i-registered_units">#registered_units &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/SILoader.html#method-i-si_unit">#si_unit &mdash; Van::Units::SILoader</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-i-simplify">#simplify &mdash; Van::Units::Value</a></li>
+		
+			<li><a href="Van/Units/Unit.html#method-i-simplify">#simplify &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-i-to">#to &mdash; Van::Units::Value</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-i-to_f">#to_f &mdash; Van::Units::Value</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-i-to_i">#to_i &mdash; Van::Units::Value</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-i-to_int">#to_int &mdash; Van::Units::Value</a></li>
+		
+			<li><a href="Van/Units/Converter.html#method-i-to_s">#to_s &mdash; Van::Units::Converter</a></li>
+		
+			<li><a href="Van/Units/BaseUnit.html#method-i-to_s">#to_s &mdash; Van::Units::BaseUnit</a></li>
+		
+			<li><a href="Van/Units/Unit.html#method-i-to_s">#to_s &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-i-to_s">#to_s &mdash; Van::Units::Value</a></li>
+		
+			<li><a href="String.html#method-i-to_unit">#to_unit &mdash; String</a></li>
+		
+			<li><a href="Van/Units/Unit.html#method-i-to_unit">#to_unit &mdash; Van::Units::Unit</a></li>
+		
+			<li><a href="String.html#method-i-to_value">#to_value &mdash; String</a></li>
+		
+			<li><a href="Van/Units/Value.html#method-i-to_value">#to_value &mdash; Van::Units::Value</a></li>
+		
+			<li><a href="Numeric.html#method-i-to_value">#to_value &mdash; Numeric</a></li>
+		
+			<li><a href="Van/Units/StandardLoader.html#method-i-unit">#unit &mdash; Van::Units::StandardLoader</a></li>
+		
+			<li><a href="Van/Units/Unit.html#method-i-unitless%3F">#unitless? &mdash; Van::Units::Unit</a></li>
+		
+	</ul>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+</body>
+</html>
