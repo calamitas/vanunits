@@ -1,3 +1,4 @@
+require 'van/units/version'
 require 'van/units/units'
 
 module Van
