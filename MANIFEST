@@ -1,4 +1,4 @@
-#!mast -x Syckfile bin lib meta qed test [A-Z]*
+#!mast -x Syckfile bin lib qed test [A-Z]*
 lib/van/units/base.rb
 lib/van/units/constants/cgs.rb
 lib/van/units/constants/math/cgs.rb
@@ -32,18 +32,18 @@ lib/van/units/data/xmethods/mapping.rb
 lib/van/units/data/xmethods.rb
 lib/van/units/loaders.rb
 lib/van/units/units.rb
+lib/van/units/version.rb
 lib/van/units.rb
 lib/van/units_currency.rb
-meta/data.rb
-meta/package
-meta/profile
 qed/conversion.rdoc
 qed/equality.rdoc
 qed/operations.rdoc
 test/test_constants.rb
 test/test_currency.rb
 test/test_units.rb
+HISTORY.rdoc
+PROFILE
 LICENSE
 README.rdoc
-HISTORY
+VERSION
 HOWITWORKS.rdoc
