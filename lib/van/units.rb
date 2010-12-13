@@ -1,8 +1,8 @@
-require 'van/units/version'
-require 'van/units/units'
-
 module Van
 module Units
+
+  require 'van/units/version'
+  require 'van/units/units'
 
   # Load conversion units.
   class Converter
