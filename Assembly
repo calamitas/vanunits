@@ -1,0 +1,27 @@
+---
+gem:
+  active: true
+
+github:
+  active : true
+
+ridoc:
+  service: RIDoc
+  include: "lib/"
+  output : .rdoc
+
+rdoc:
+  include: ["lib/", "[A-Z]*.*"]
+  output : site/docs/api
+
+dnote:
+  labels   : ~
+  exclude  : [work]
+  output   : log/NOTES.rdoc
+
+email:
+  service : Email
+  file    : ~
+  subject : ~
+  mailto  : ruby-talk@ruby-lang.org
+

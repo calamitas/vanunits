@@ -1,4 +1,4 @@
-#!mast -x Syckfile -x PROFILE .ruby bin lib qed test [A-Z]*
+#!mast .ruby bin lib qed test [A-Z]*.*
 .ruby
 lib/van/units/base.rb
 lib/van/units/constants/cgs.rb
@@ -42,8 +42,7 @@ qed/operations.rdoc
 test/test_constants.rb
 test/test_currency.rb
 test/test_units.rb
-HISTORY.rdoc
-LICENSE
 README.rdoc
-VERSION
-HOWITWORKS.rdoc
+HowItWorks.rdoc
+History.rdoc
+License.txt

@@ -1,9 +1,10 @@
 --- 
+name   : vanunits
+version: 1.5.0
+
 title  : VanUnits
 summary: Vanbroekhoven's Units System
-contact: Trans <transfire at gmail.com>
 created: 2005-11-26
-license: MIT
 
 description:
   VanUnits is a units system providing both SI units and web-updated
@@ -12,7 +13,7 @@ description:
   "m kg s" and "cm kg s" measures.
 
 requires:
-  - syckle (build)
+  - detroit (build)
 
 resources:
   home: http://rubyworks.github.com/vanunits
@@ -20,8 +21,9 @@ resources:
 
 authors:
   - Peter Vanbroekhoven
+  - Thomas Sawyer <transfire@gmail.com>
 
-copyright:
-  Copyright (c) 2005 Peter Vanbroekhoven
+copyrights:
+  - (c)2005 Peter Vanbroekhoven (MIT)
 
-organization: RubyWorks
+source: Profile
